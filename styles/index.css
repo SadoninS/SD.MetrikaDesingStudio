@@ -5,6 +5,7 @@ html {
     margin: 0 auto;
     background: #ffffff;
 }
+
 .mainBox {
     width: 1400px;
     height: 7211px;
@@ -28,10 +29,12 @@ html {
     height: 128px;
     z-index: 1;
 }
+
 .logo {
     margin-left: 125px;
     margin-top: 33px;
 }
+
 .aboutNavBar {
     position: absolute;
     width: 51px;
@@ -67,6 +70,7 @@ html {
     text-transform: uppercase;
     color: #121212;
 }
+
 .servicesNavBar {
     position: absolute;
     width: 51px;
@@ -84,6 +88,7 @@ html {
     text-decoration: none;
     color: #121212;
 }
+
 .contactsNavBar {
     position: absolute;
     width: 51px;
@@ -109,6 +114,7 @@ html {
     width: 1150px;
     height: 500px;
 }
+
 .header-h1 {
     position: absolute;
     box-sizing: border-box;
@@ -123,6 +129,7 @@ html {
     letter-spacing: -0.03em;
     color: #121212;
 }
+
 .header-p1 {
     position: absolute;
     box-sizing: border-box;
@@ -148,9 +155,8 @@ html {
 .about {
     position: relative;
     width: 1051px;
-    height: 518px;
+    height: 668px;
     box-sizing: border-box;
-    margin-top: 149px;
 }
 
 .aboutLink {
@@ -158,6 +164,7 @@ html {
     box-sizing: border-box;
     width: 51px;
     height: 25px;
+    top: 150px;
 
     font-family: "Manrope";
     font-style: normal;
@@ -168,9 +175,10 @@ html {
     text-transform: uppercase;
     color: #121212;
 }
+
 #about-h2 {
     position: absolute;
-    margin-top: 55px;
+    margin-top: 205px;
 
     font-family: "Manrope";
     font-style: normal;
@@ -187,7 +195,7 @@ html {
     border-radius: 5px;
     width: 255px;
     height: 67px;
-    top: 451px;
+    top: 600px;
 
     font-family: "Manrope";
     font-style: normal;
@@ -209,6 +217,7 @@ html {
     top: 6982px;
     background-color: #333333;
 }
+
 .copyright {
     position: absolute;
     font-family: "Manrope", Courier, monospace;
