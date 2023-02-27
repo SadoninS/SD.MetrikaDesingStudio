@@ -1,0 +1,226 @@
+html {
+    scroll-behavior: smooth;
+    width: 1400px;
+    height: 7211px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+.mainBox {
+    width: 1400px;
+    height: 7211px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.header {
+    position: relative;
+    margin: 0 auto;
+    width: 1150px;
+    height: 650px;
+}
+
+.navBar {
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 1400px;
+    height: 128px;
+    z-index: 1;
+}
+.logo {
+    margin-left: 125px;
+    margin-top: 33px;
+}
+.aboutNavBar {
+    position: absolute;
+    width: 51px;
+    height: 25px;
+    left: 810px;
+    top: 33px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #121212;
+    opacity: 0.5;
+}
+
+.projectsNavBar {
+    position: absolute;
+    width: 51px;
+    height: 25px;
+    left: 921px;
+    top: 33px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #121212;
+}
+.servicesNavBar {
+    position: absolute;
+    width: 51px;
+    height: 25px;
+    left: 1060px;
+    top: 33px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #121212;
+}
+.contactsNavBar {
+    position: absolute;
+    width: 51px;
+    height: 25px;
+    left: 1186px;
+    top: 33px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #121212;
+}
+
+.header-image-chair {
+    position: absolute;
+    box-sizing: border-box;
+    top: 150px;
+    width: 1150px;
+    height: 500px;
+}
+.header-h1 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 956px;
+    height: 120px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+.header-p1 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 430px;
+    height: 81px;
+    top: 529px;
+    left: 40px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+}
+
+.flow {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.about {
+    position: relative;
+    width: 1051px;
+    height: 518px;
+    box-sizing: border-box;
+    margin-top: 149px;
+}
+
+.aboutLink {
+    position: absolute;
+    box-sizing: border-box;
+    width: 51px;
+    height: 25px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #121212;
+}
+#about-h2 {
+    position: absolute;
+    margin-top: 55px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    color: #000000;
+}
+
+#about-btn-services {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 255px;
+    height: 67px;
+    top: 451px;
+
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    background-color: #ad1818;
+
+    text-decoration: none;
+    padding: 20px 40px;
+}
+
+.footer {
+    position: absolute;
+    width: 1400px;
+    height: 229px;
+    top: 6982px;
+    background-color: #333333;
+}
+.copyright {
+    position: absolute;
+    font-family: "Manrope", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    opacity: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    top: 172px;
+    left: 509px;
+    bottom: 30px;
+}
