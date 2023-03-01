@@ -1,3 +1,3 @@
 # MetrikaDesingStudio
 ---
-https://sadonins.github.io/MetrikaDesingStudio/
+https://sadonins.github.io/SD.MetrikaDesingStudio/
