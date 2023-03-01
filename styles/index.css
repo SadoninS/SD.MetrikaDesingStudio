@@ -1,30 +1,20 @@
-html {
-    scroll-behavior: smooth;
-    width: 1400px;
-    height: 7211px;
-    margin: 0 auto;
-    background: #ffffff;
-}
-
 .mainBox {
+    margin: 0 auto;
     width: 1400px;
     height: 7211px;
-    margin: 0 auto;
     background: #ffffff;
 }
 
 .header {
-    position: relative;
     margin: 0 auto;
     width: 1150px;
     height: 650px;
 }
 
 .navBar {
-    position: sticky;
+    position: relative;
     top: 0px;
     background-color: #ffffff;
-    box-sizing: border-box;
     width: 1400px;
     height: 128px;
     z-index: 1;
@@ -41,7 +31,6 @@ html {
     height: 25px;
     left: 810px;
     top: 33px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -59,7 +48,6 @@ html {
     height: 25px;
     left: 921px;
     top: 33px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -77,7 +65,6 @@ html {
     height: 25px;
     left: 1060px;
     top: 33px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -106,21 +93,13 @@ html {
     text-decoration: none;
     color: #121212;
 }
-
-.header-image-chair {
-    position: absolute;
-    box-sizing: border-box;
-    top: 150px;
-    width: 1150px;
-    height: 500px;
+.header {
+    margin-bottom: 150px;
 }
-
 .header-h1 {
-    position: absolute;
-    box-sizing: border-box;
+    margin-bottom: 30px;
     width: 956px;
     height: 120px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -129,15 +108,16 @@ html {
     letter-spacing: -0.03em;
     color: #121212;
 }
-
+.header-image-chair {
+    background-image: url(../images/header-1.png);
+    width: 1150px;
+    height: 500px;
+}
 .header-p1 {
-    position: absolute;
-    box-sizing: border-box;
+    margin-left: 40px;
+    padding-top: 379px;
     width: 430px;
     height: 81px;
-    top: 529px;
-    left: 40px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -146,26 +126,19 @@ html {
     letter-spacing: -0.03em;
     color: #ffffff;
 }
-
 .flow {
-    width: 1150px;
     margin: 0 auto;
+    width: 1400px;
 }
-
 .about {
-    position: relative;
+    margin: 0 0 150px 125px;
     width: 1051px;
-    height: 668px;
-    box-sizing: border-box;
+    height: 518px;
 }
-
-.aboutLink {
-    position: absolute;
-    box-sizing: border-box;
-    width: 51px;
-    height: 25px;
-    top: 150px;
-
+.anchorLink {
+    display: block;
+    margin-left: 125px;
+    margin-bottom: 30px;
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -175,11 +148,10 @@ html {
     text-transform: uppercase;
     color: #121212;
 }
-
-#about-h2 {
-    position: absolute;
-    margin-top: 205px;
-
+.about-p {
+    margin-bottom: 30px;
+    width: 1048px;
+    height: 366px;
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -188,15 +160,11 @@ html {
     letter-spacing: -0.03em;
     color: #000000;
 }
-
-#about-btn-services {
-    position: absolute;
-    box-sizing: border-box;
+.about-btn-services {
+    display: block;
     border-radius: 5px;
     width: 255px;
     height: 67px;
-    top: 600px;
-
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
@@ -205,9 +173,95 @@ html {
     letter-spacing: -0.03em;
     color: #ffffff;
     background-color: #ad1818;
-
     text-decoration: none;
     padding: 20px 40px;
+}
+.projects {
+    margin: 0 auto 150px;
+    width: 1150px;
+    height: 2067px;
+}
+.project {
+    height: 548px;
+    margin-bottom: 90px;
+}
+.project-image {
+    margin-bottom: 15px;
+}
+.project-location {
+    margin-bottom: 15px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+.details {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.03em;
+    color: #ad1818;
+}
+.showAllProjects {
+    display: block;
+    padding-top: 56px;
+    height: 153px;
+    width: 100%;
+    font-family: "Manrope";
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #ad1818;
+    border: 1px solid #ad1818;
+    border-radius: 10px;
+}
+.showAllProjects:hover {
+    color: #ffffff;
+    background-color: #ad1818;
+}
+
+.services {
+    margin: 0 auto;
+    height: 1844px;
+    width: 100%;
+    background-color: #121212;
+    padding: 150px 125px;
+}
+.servisesLink {
+    display: block;
+    margin-bottom: 30px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.service-image {
+    margin-bottom: 15px;
+    width: 1150px;
+    height: 270px;
+}
+.service-description {
+    margin-bottom: 60px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: -0.03em;
+    color: #ffffff;
 }
 
 .footer {
@@ -217,7 +271,6 @@ html {
     top: 6982px;
     background-color: #333333;
 }
-
 .copyright {
     position: absolute;
     font-family: "Manrope", Courier, monospace;
