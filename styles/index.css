@@ -3,6 +3,9 @@
     width: 1400px;
     height: 7211px;
     background: #ffffff;
+    font-family: "Manrope", Courier, monospace;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .header {
@@ -31,9 +34,7 @@
     height: 25px;
     left: 810px;
     top: 33px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
@@ -48,9 +49,7 @@
     height: 25px;
     left: 921px;
     top: 33px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
@@ -65,9 +64,7 @@
     height: 25px;
     left: 1060px;
     top: 33px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
@@ -83,9 +80,7 @@
     left: 1186px;
     top: 33px;
 
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
@@ -100,9 +95,7 @@
     margin-bottom: 30px;
     width: 956px;
     height: 120px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 60px;
     line-height: 60px;
     letter-spacing: -0.03em;
@@ -119,9 +112,7 @@
     bottom: 40px;
     left: 40px;
     width: 430px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.03em;
@@ -141,12 +132,21 @@
     display: block;
     margin-left: 125px;
     margin-bottom: 30px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #121212;
+}
+#about {
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    text-decoration: none;
     text-transform: uppercase;
     color: #121212;
 }
@@ -154,9 +154,7 @@
     margin-bottom: 30px;
     width: 1048px;
     height: 366px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 45px;
     line-height: 61px;
     letter-spacing: -0.03em;
@@ -167,9 +165,7 @@
     border-radius: 5px;
     width: 255px;
     height: 67px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.03em;
@@ -192,18 +188,14 @@
 }
 .project-location {
     margin-bottom: 15px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 30px;
     line-height: 41px;
     letter-spacing: -0.03em;
     color: #121212;
 }
 .details {
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.03em;
@@ -241,9 +233,7 @@
 .servisesLink {
     display: block;
     margin-bottom: 30px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+    text-decoration: none;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: -0.03em;
@@ -257,9 +247,7 @@
 }
 .service-description {
     margin-bottom: 60px;
-    font-family: "Manrope";
-    font-style: normal;
-    font-weight: 400;
+     
     font-size: 30px;
     line-height: 41px;
     letter-spacing: -0.03em;
