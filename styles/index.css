@@ -109,15 +109,16 @@
     color: #121212;
 }
 .header-image-chair {
+    position: relative;
     background-image: url(../images/header-1.png);
     width: 1150px;
     height: 500px;
 }
 .header-p1 {
-    margin-left: 40px;
-    padding-top: 379px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
     width: 430px;
-    height: 81px;
     font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
