@@ -41,6 +41,7 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 header {
@@ -225,7 +226,6 @@ h2 {
     font-size: 60px;
     text-decoration: underline;
     line-height: 60px;
-    letter-spacing: -0.03em;
     color: #121212;
     opacity: 0.5;
 }
@@ -244,25 +244,25 @@ h2 {
     height: 25px;
     top: 60px;
     left: 475px;
-    color: #FFFFFF;
 }
 
 .footerLink {
     font-size: 18px;
     line-height: 25px;
+    font-size: 18px;
+    line-height: 25px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .copyright {
     position: absolute;
-    font-family: "Manrope", Courier, monospace;
+    left: 493px;
+    bottom: 30px;
     font-size: 20px;
     line-height: 27px;
     opacity: 50%;
     color: #ffffff;
     text-decoration: none;
-    left: 493px;
-    bottom: 30px;
 }
