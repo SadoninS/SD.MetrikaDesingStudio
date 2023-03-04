@@ -190,10 +190,11 @@ h2 {
     color: #FFFFFF;
 }
 
-.contacts{
+.contacts {
     position: relative;
     height: 553px;
 }
+
 .icon-phone {
     position: absolute;
     left: 120px;
@@ -234,7 +235,8 @@ h2 {
     height: 229px;
     background-color: #333333;
 }
-.footerLinks{
+
+.footerLinks {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -245,7 +247,7 @@ h2 {
     color: #FFFFFF;
 }
 
-.footerLink{
+.footerLink {
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
@@ -261,6 +263,6 @@ h2 {
     opacity: 50%;
     color: #ffffff;
     text-decoration: none;
-   left:493px;
+    left: 493px;
     bottom: 30px;
 }
