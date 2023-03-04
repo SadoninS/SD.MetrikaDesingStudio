@@ -173,6 +173,11 @@ h2 {
     line-height: 41px;
     color: #ffffff;
 }
+.example{
+    position: relative;
+    background: url(images/bedroom.png);
+}
+
 
 .footer {
     position: absolute;
