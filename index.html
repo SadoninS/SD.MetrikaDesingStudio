@@ -12,23 +12,30 @@
         <meta charset="UTF-8" />
         <title>Metrika Design Studio</title>
     </head>
-    
-    <body class="mainBox">
 
+    <body class="mainBox">
         <nav class="navBar">
             <a href="https://sadonins.github.io/SD.MetrikaDesingStudio/">
-                <img class="logo" src="images/logo.png" alt="метрика лого" />
+                <img
+                    class="logo"
+                    src="images/metrika-logo.png"
+                    alt="логотип студии метрика"
+                />
             </a>
-            <a href="#about" class="aboutNavBar">О нас</a>
+            <ul class="navBarLinks">
+                <li class="navBarLink"><a href="#about">О нас</a></li>
+                <li class="navBarLink"><a href="#projects">Проекты</a></li>
+                <li class="navBarLink"><a href="#services">Услуги</a></li>
+                <li class="navBarLink"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <!-- <a href="#about" class="aboutNavBar">О нас</a>
             <a href="#projects" class="projectsNavBar">Проекты</a>
             <a href="#services" class="servicesNavBar">Услуги</a>
-            <a href="#contacts" class="contactsNavBar">Контакты</a>
+            <a href="#contacts" class="contactsNavBar">Контакты</a> -->
         </nav>
 
-        <header class="header">
-            <h1 class="header-h1">
-                Современные и стильные интерьеры для комфортной жизни
-            </h1>
+        <header>
+            <h1>Современные и стильные интерьеры для комфортной жизни</h1>
             <div class="header-image-chair">
                 <p class="header-p1">
                     Мы - команда квалифицированных дизайнеров и архитекторов,
@@ -37,10 +44,11 @@
             </div>
         </header>
 
-        <main class="flow">
-
+        <main>
             <section class="about">
-                <h2><a id="about" href="#about" class="anchorLink">О нас</a></h2>
+                <h2>
+                    <a id="about" href="#about" class="anchorLink">О нас</a>
+                </h2>
                 <p class="about-p">
                     Студия основана в 2011 году. Полностью отдаемся
                     проектированию и реализации интерьеров. К нам обращаются за
@@ -53,30 +61,33 @@
                 >
             </section>
 
-            <h2><a id="projects" href="#projects" class="anchorLink">Проекты</a></h2>
+           
 
             <section class="projects">
-                <div class="project">
+                <h2>
+                    <a id="projects" href="#projects" class="anchorLink">Проекты</a>
+                </h2>
+                <article class="project">
                     <img class="project-image" src="images/projects1.png" />
                     <h3 class="project-location">
                         ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
                     </h3>
                     <a class="details" href="#">Подробнее →</a>
-                </div>
-                <div class="project">
+                </article>
+                <article class="project">
                     <img class="project-image" src="images/projects2.png" />
                     <h3 class="project-location">
                         ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
                     </h3>
                     <a class="details" href="#">Подробнее →</a>
-                </div>
-                <div class="project">
-                    <img class="projects-image" src="images/projects3.png" />
+                </article>
+                <article class="project">
+                    <img class="project-image" src="images/projects3.png" />
                     <h3 class="project-location">
                         ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
                     </h3>
                     <a class="details" href="#">Подробнее →</a>
-                </div>
+                </article>
                 <a href="#projects" class="showAllProjects"
                     >Смотреть все проекты</a
                 >
@@ -84,30 +95,30 @@
 
             <section id="services" class="services">
                 <h2><a href="#services" class="servisesLink">Услуги</a></h2>
-                <div class="service">
+                <article class="service">
                     <img class="service-image" src="images/service1.png" />
                     <h3 class="service-description">
                         Планировочное решение — от 2500₽/м²
                     </h3>
-                </div>
-                <div class="service">
+                </article>
+                <article class="service">
                     <img class="service-image" src="images/service2.png" />
                     <h3 class="service-description">
                         Дизайн-проект — от 3000₽/м²
                     </h3>
-                </div>
-                <div class="service">
+                </article>
+                <article class="service">
                     <img class="service-image" src="images/service3.png" />
                     <h3 class="service-description">
                         Авторский надзор — от 30 000₽ в месяц
                     </h3>
-                </div>
-                <div class="service">
+                </article>
+                <article class="service">
                     <img class="service-image" src="images/service4.png" />
                     <h3 class="service-description">
                         Комплектация — 5% от стоимости спецификации
                     </h3>
-                </div>
+                </article>
             </section>
 
             <section class="example"></section>

@@ -1,97 +1,75 @@
 .mainBox {
     margin: 0 auto;
     width: 1400px;
-    /* height: 7211px; */
-    background: #ffffff;
     font-family: "Manrope", Courier, monospace;
-    font-style: normal;
-    font-weight: 400;
+    letter-spacing: -0.03em;
+
 }
+
 .header {
     margin: 0 auto;
     width: 1150px;
-    height: 650px;
 }
+
 .navBar {
     position: relative;
-    width: 1400px;
     height: 128px;
 }
+
 .logo {
-    margin-left: 125px;
-    margin-top: 33px;
-}
-.aboutNavBar {
     position: absolute;
-    width: 51px;
-    height: 25px;
+    left: 125px;
+    top: 33px;
+}
+
+.navBarLinks {
+    position: absolute;
+    top: 33px;
     left: 810px;
-    top: 33px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #121212;
-    opacity: 0.5;
 }
-.projectsNavBar {
-    position: absolute;
-    width: 51px;
-    height: 25px;
-    left: 921px;
-    top: 33px;
+
+.navBarLink {
+    margin-top: 33px;
+    margin-right: 60px;
+    display: inline;
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.03em;
-    text-decoration: none;
     text-transform: uppercase;
+    text-decoration: none;
     color: #121212;
 }
 
-.servicesNavBar {
-    position: absolute;
-    width: 51px;
-    height: 25px;
-    left: 1060px;
-    top: 33px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
+a {
     text-decoration: none;
-    color: #121212;
 }
-.contactsNavBar {
-    position: absolute;
-    width: 51px;
-    height: 25px;
-    left: 1186px;
-    top: 33px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #121212;
+
+header {
+    margin: 0 125px 150px 125px;
 }
-.header {
-    margin-bottom: 150px;
-}
-.header-h1 {
+
+h1 {
     margin-bottom: 30px;
     width: 956px;
-    height: 120px;
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: -0.03em;
     color: #121212;
+    letter-spacing: -0.03em;
 }
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
 .header-image-chair {
     position: relative;
     background-image: url(../images/header-1.png);
     width: 1150px;
     height: 500px;
 }
+
 .header-p1 {
     position: absolute;
     bottom: 40px;
@@ -99,40 +77,15 @@
     width: 430px;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     color: #ffffff;
 }
-.flow {
-    margin: 0 auto;
-    width: 1400px;
-}
+
 .about {
     margin: 0 0 150px 125px;
     width: 1051px;
     height: 518px;
 }
-.anchorLink {
-    display: block;
-    margin-left: 125px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #121212;
-}
-#about {
-    display: block;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #121212;
-}
+
 .about-p {
     margin-bottom: 30px;
     width: 1048px;
@@ -142,11 +95,11 @@
     letter-spacing: -0.03em;
     color: #000000;
 }
+
 .about-btn-services {
     display: block;
     border-radius: 5px;
     width: 255px;
-    height: 67px;
     font-size: 20px;
     line-height: 27px;
     letter-spacing: -0.03em;
@@ -155,11 +108,12 @@
     text-decoration: none;
     padding: 20px 40px;
 }
+
 .projects {
     margin: 0 auto 150px;
     width: 1150px;
-    height: 2067px;
 }
+
 .project {
     height: 548px;
     margin-bottom: 90px;
@@ -168,38 +122,35 @@
 .project-image {
     margin-bottom: 15px;
 }
+
 .project-location {
     margin-bottom: 15px;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #121212;
 }
+
 .details {
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.03em;
     color: #ad1818;
 }
+
 .showAllProjects {
     display: block;
-    padding-top: 56px;
     height: 153px;
-    width: 100%;
     text-decoration: none;
     font-size: 30px;
-    line-height: 41px;
+    line-height: 153px;
     text-align: center;
-    letter-spacing: -0.03em;
     color: #ad1818;
     border: 1px solid #ad1818;
     border-radius: 5px;
 }
+
 .showAllProjects:hover {
     color: #ffffff;
     background-color: #ad1818;
 }
+
 .services {
     margin: 0 auto;
     height: 1844px;
@@ -207,29 +158,22 @@
     background-color: #121212;
     padding: 150px 125px;
 }
+
 .servisesLink {
-    display: block;
-    margin-bottom: 30px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
     color: #ffffff;
 }
+
 .service-image {
     margin-bottom: 15px;
-    width: 1150px;
-    height: 270px;
 }
+
 .service-description {
     margin-bottom: 60px;
-
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #ffffff;
 }
+
 .footer {
     position: absolute;
     width: 1400px;
@@ -237,14 +181,12 @@
     top: 6982px;
     background-color: #333333;
 }
+
 .copyright {
     position: absolute;
     font-family: "Manrope", Courier, monospace;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     opacity: 50%;
     color: #ffffff;
     text-decoration: none;
