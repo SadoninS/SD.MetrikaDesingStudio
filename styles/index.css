@@ -173,18 +173,84 @@ h2 {
     line-height: 41px;
     color: #ffffff;
 }
-.example{
+
+.example {
+    height: 717px;
     position: relative;
-    background: url(images/bedroom.png);
+    background: url(../images/bedroom.png);
 }
 
+.example-p {
+    position: absolute;
+    width: 443px;
+    bottom: 60px;
+    left: 125px;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+.contacts{
+    position: relative;
+    height: 553px;
+}
+.icon-phone {
+    position: absolute;
+    left: 120px;
+    top: 150px;
+
+}
+
+.contacts-h2 {
+    position: absolute;
+    left: 125px;
+    top: 186px;
+}
+
+.tel {
+    position: absolute;
+    left: 125px;
+    top: 243px;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+}
+
+.email {
+    position: absolute;
+    left: 125px;
+    top: 333px;
+    font-size: 60px;
+    text-decoration: underline;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    color: #121212;
+    opacity: 0.5;
+}
 
 .footer {
-    position: absolute;
-    width: 1400px;
+    position: relative;
     height: 229px;
-    top: 6982px;
     background-color: #333333;
+}
+.footerLinks{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 450px;
+    height: 25px;
+    top: 60px;
+    left: 475px;
+    color: #FFFFFF;
+}
+
+.footerLink{
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .copyright {
@@ -195,7 +261,6 @@ h2 {
     opacity: 50%;
     color: #ffffff;
     text-decoration: none;
-    top: 172px;
-    left: 509px;
+   left:493px;
     bottom: 30px;
 }
