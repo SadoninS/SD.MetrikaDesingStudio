@@ -185,10 +185,12 @@ h2 {
 .example-p {
     position: absolute;
     width: 443px;
+    height: 82px;
     bottom: 60px;
     left: 125px;
     font-size: 30px;
     line-height: 41px;
+    letter-spacing: -0.03em;
     color: #FFFFFF;
 }
 
