@@ -50,10 +50,15 @@ nav {
 
 .navLink {
     margin-left: 60px;
-    display: inline;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
+}
+
+.navLink:hover {
+    border-bottom: 1px solid #121212;
+    padding-bottom: 2px;
+    opacity: 0.5;
 }
 
 header {
@@ -63,7 +68,6 @@ header {
 .header-image-chair {
     position: relative;
     background-image: url(../images/header-1.png);
-    width: 1150px;
     height: 500px;
 }
 
@@ -157,8 +161,9 @@ header {
     background-color: #121212;
     padding: 150px 125px;
 }
-.services-h2{
-    color:#ffffff;
+
+.services-h2 {
+    color: #ffffff;
 }
 
 .servisesLink {
@@ -226,9 +231,14 @@ header {
     left: 125px;
     top: 333px;
     font-size: 60px;
-    text-decoration: underline;
     line-height: 60px;
     color: #121212;
+    opacity: 0.5;
+}
+
+.email:hover{
+    border-bottom: 2px solid #121212;
+    padding-bottom: 8px;
     opacity: 0.5;
 }
 
@@ -253,6 +263,12 @@ footer {
     line-height: 25px;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+.footerLink:hover {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2px;
+    opacity: 0.5;
 }
 
 .copyright {
