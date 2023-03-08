@@ -16,6 +16,7 @@ h1 {
 }
 
 h2 {
+    display: block;
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 25px;
@@ -219,14 +220,14 @@ header {
     top: 186px;
 }
 
-.contacts-h2:before {
-    margin-bottom: 16px;
-    width: 13px;
+.contacts-h2::before {
+    margin-top: -35px;
+    position: absolute;
+    content: '';
     height: 22px;
+    width: 13px;
     display: block;
-    border: 1px solid red;
-    background-image: url('/images/icon-cellphone.png');
-    background-repeat: no-repeat;
+    background-image: url('../images/icon-cellphone.png');
     background-size: cover;
 }
 
@@ -246,8 +247,8 @@ header {
     top: 333px;
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -0.03em;
     color: #121212;
-    opacity: 0.5;
 }
 
 .email:hover {
