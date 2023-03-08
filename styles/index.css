@@ -185,6 +185,9 @@ header {
     height: 717px;
     position: relative;
     background: url(../images/bedroom.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 }
 
 .example-p {
@@ -216,6 +219,17 @@ header {
     top: 186px;
 }
 
+.contacts-h2:before {
+    margin-bottom: 16px;
+    width: 13px;
+    height: 22px;
+    display: block;
+    border: 1px solid red;
+    background-image: url('/images/icon-cellphone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .tel {
     position: absolute;
     left: 125px;
@@ -236,7 +250,7 @@ header {
     opacity: 0.5;
 }
 
-.email:hover{
+.email:hover {
     border-bottom: 2px solid #121212;
     padding-bottom: 8px;
     opacity: 0.5;
