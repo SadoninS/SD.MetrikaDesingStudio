@@ -1,3 +1,5 @@
+/* совпадающие для всех элементов свойства вынесены в общий тэг */
+
 body {
     margin: 0 auto;
     width: 1400px;
@@ -6,13 +8,21 @@ body {
 
 }
 
+/* по заданию к чекпоинту ясно, что достаточно вынести свойство letter-spacing в общий тэг, но из-за особенностей наследования, для проверки PixelPerfect потребовалось применить его дважды к следующим элементам. там где нет нобходимости, свойство не применялось. */
+
+h1, .header-p, .about-p, .about-btn-services, .project-location, .showAllProjects, 
+.service-description, .email, .copyright{
+    letter-spacing: -0.03em;
+}
+
+/* далее следует группа элементов, имеющие общие свойства */
+
 h1 {
     margin-bottom: 30px;
     width: 956px;
     font-size: 60px;
     line-height: 60px;
     color: #121212;
-    letter-spacing: -0.03em;
 }
 
 h2 {
@@ -33,6 +43,9 @@ a {
     color: #121212;
 }
 
+/* далее свойства сгруппированы по секциям */
+
+    /* секция Nav */
 nav {
     position: relative;
     height: 128px;
@@ -48,7 +61,6 @@ nav {
     top: 33px;
     left: 685px;
 }
-
 
 .navLink {
     margin-right: 57px;
@@ -66,6 +78,7 @@ ul li:nth-last-child(1){
     opacity: 0.5;
 }
 
+    /* секция Header */
 header {
     margin: 0 125px 150px 125px;
 }
@@ -83,10 +96,10 @@ header {
     width: 430px;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     color: #ffffff;
 }
 
+    /* секция About */
 #about {
     margin: 0 0 150px 125px;
     width: 1051px;
@@ -99,7 +112,6 @@ header {
     height: 366px;
     font-size: 45px;
     line-height: 61px;
-    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -110,13 +122,13 @@ header {
     border-radius: 5px;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.03em;
     text-decoration: none;
     color: #ffffff;
     background-color: #ad1818;
 
 }
 
+    /* секция Projects */
 #projects {
     margin: 0 auto 150px;
     width: 1150px;
@@ -135,7 +147,6 @@ header {
     margin-bottom: 18px;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -150,7 +161,6 @@ header {
     text-decoration: none;
     font-size: 30px;
     line-height: 153px;
-    letter-spacing: -0.03em;
     text-align: center;
     color: #ad1818;
     border: 1px solid #ad1818;
@@ -162,6 +172,7 @@ header {
     background-color: #ad1818;
 }
 
+    /* секция Services */
 #services {
     margin: 0 auto;
     height: 1844px;
@@ -186,10 +197,10 @@ header {
     margin-bottom: 60px;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.03em;
     color: #ffffff;
 }
 
+    /* секция Example */
 #example {
     height: 717px;
     position: relative;
@@ -210,6 +221,7 @@ header {
     color: #FFFFFF;
 }
 
+    /* секция Contacts */
 #contacts {
     position: relative;
     height: 553px;
@@ -245,7 +257,6 @@ header {
     top: 243px;
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -255,7 +266,6 @@ header {
     top: 333px;
     font-size: 60px;
     line-height: 60px;
-    letter-spacing: -0.03em;
     color: #121212;
     border-bottom: 2px solid #121212;
     padding-bottom: 8px;
@@ -267,6 +277,7 @@ header {
     opacity: 0.5;
 }
 
+    /* секция Footer */
 footer {
     position: relative;
     height: 229px;
@@ -301,6 +312,5 @@ footer {
     font-size: 20px;
     line-height: 27px;
     opacity: 50%;
-    letter-spacing: -0.03em;
     color: #ffffff;
 }
