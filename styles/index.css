@@ -3,15 +3,24 @@
 body {
     margin: 0 auto;
     width: 1400px;
+    min-width: 100%; 
+    /*лечит прилипание отдельных секций к левой стороне области видимости при увеличении масштаба*/
+
     font-family: "Manrope", Courier, monospace;
     letter-spacing: -0.03em;
-
 }
 
-/* по заданию к чекпоинту ясно, что достаточно вынести свойство letter-spacing в общий тэг, но из-за особенностей наследования, для проверки PixelPerfect потребовалось применить его дважды к следующим элементам. там где нет нобходимости, свойство не применялось. */
+/* по списку типовых ошибок ясно, что достаточно вынести свойство letter-spacing в общий тэг, но, из-за особенностей наследования, для проверки PixelPerfect потребовалось применить его повторно к следующим элементам. там где нет нобходимости свойство не применялось. */
 
-h1, .header-p, .about-p, .about-btn-services, .project-location, .showAllProjects, 
-.service-description, .email, .copyright{
+h1,
+.welcome-p,
+.about-p,
+.about-btn-services,
+.project-location,
+.showAllProjects,
+.service-description,
+.email,
+.copyright {
     letter-spacing: -0.03em;
 }
 
@@ -41,10 +50,12 @@ a {
 
 /* далее свойства сгруппированы по секциям */
 
-    /* секция Nav */
+/* секция Header */
 
-nav {
+header {
+    margin: 0 auto;
     position: relative;
+    width: 1150px;
     height: 128px;
 }
 
@@ -67,30 +78,33 @@ nav {
     text-transform: uppercase;
 }
 
-    /* применил nth-last-child, т.к. это быдло требование к ДЗ, но также мог обойтись абсолютным позиционированием, расположением по правому краю родительского блока и отступом слева каждого элемента списка, что на мой взгляд было проще и лаконичнее */
+/* продемонстрировал применение nth-last-child, т.к. это быдло требование к ДЗ, но также мог обойтись абсолютным позиционированием, расположением списка по правому краю родительского блока и отступом 60px(как в макете) слева каждого элемента списка, что на мой взгляд было проще и лаконичнее */
 
-ul li:nth-last-child(1){
+ul li:nth-last-child(1) {
     margin-right: 0px;
 }
+
 .navLink:hover {
-    border-bottom: 1px solid #121212;
+    border-bottom: 1px solid rgba(18, 18, 18, 0.5);
     padding-bottom: 1px;
     opacity: 0.5;
 }
 
-    /* секция Header */
+/* секция welcome */
 
-header {
-    margin: 0 125px 150px 125px;
+#welcome {
+    margin: 0 auto;
+    width: 1150px;
 }
 
-.header-image-chair {
+.welcome-image-chair {
+    margin-bottom: 150px;
     position: relative;
-    background-image: url(../images/header-chair.png);
+    background-image: url(../images/welcome-chair.png);
     height: 500px;
 }
 
-.header-p {
+.welcome-p {
     position: absolute;
     bottom: 40px;
     left: 40px;
@@ -100,12 +114,11 @@ header {
     color: #ffffff;
 }
 
-    /* секция About */
+/* секция About */
 
 #about {
-    margin: 0 0 150px 125px;
-    width: 1051px;
-    height: 518px;
+    margin: 0 auto;
+    width: 1150px;
 }
 
 .about-p {
@@ -118,6 +131,7 @@ header {
 }
 
 .about-btn-services {
+    margin-bottom: 150px;
     padding: 20px 40px;
     display: block;
     width: 255px;
@@ -130,7 +144,7 @@ header {
 
 }
 
-    /* секция Projects */
+/* секция Projects */
 
 #projects {
     margin: 0 auto 150px;
@@ -170,21 +184,27 @@ header {
     border-radius: 5px;
 }
 
-    /* при наведении меняется стиль кнопки-ссылки */
+/* при наведении меняется стиль кнопки-ссылки */
 
 .showAllProjects:hover {
     color: #ffffff;
     background-color: #ad1818;
 }
 
-    /* секция Services */
+/* секция Services */
 
-#services {
-    margin: 0 auto;
+.services {
+    width: 1400px;
+    min-width: 100%;
+    /*фикс обрезки фона при горизонтальном скролле*/
     height: 1844px;
-    width: 100%;
     background-color: #121212;
     padding: 150px 125px;
+}
+
+.sevices-wrapper {
+    margin: 0 auto;
+    width: 1150px;
 }
 
 .services-h2 {
@@ -206,109 +226,114 @@ header {
     color: #ffffff;
 }
 
-    /* секция Example */
+/* секция Example */
 
 #example {
+    width: 1400px;
+    min-width: 100%;
+    /*фикс обрезки фона при горизонтальном скролле*/
     height: 717px;
     position: relative;
-    background: url(../images/bedroom.png);
+    background: url(../images/example-bedroom.png);
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 40%;
     background-size: cover;
 }
 
 .example-p {
     position: absolute;
-    width: 443px;
-    height: 82px;
     bottom: 60px;
     left: 125px;
+    width: 443px;
+    height: 82px;
     font-size: 30px;
     line-height: 41px;
     color: #FFFFFF;
 }
 
-    /* секция Contacts */
+/* секция Contacts */
 
 #contacts {
+    margin: 0 auto;
+    width: 1150px;
     position: relative;
     height: 553px;
+    padding: 150px 125px;
 }
 
-.icon-phone {
+.contacts-wrapper {
     position: absolute;
-    left: 120px;
-    top: 150px;
-
-}
-
-.contacts-h2 {
-    position: absolute;
-    left: 125px;
-    top: 186px;
+    width: 473px;
+    height: 217px;
 }
 
 .contacts-h2::before {
-    margin-top: -35px;
-    position: absolute;
-    content: '';
-    height: 21px;
-    width: 12px;
+    margin-bottom: 13px;
     display: block;
-    background-image: url('../images/icon-cellphone.png');
-    background-size: cover;
+    content: '';
+    height: 24px;
+    width: 24px;
+    background-image: url('../images/contacts-icon-cellphone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+
 }
 
-    /* добиваться полного соответствия объекта с классом tel с макетом по pixelPerfect не стал, т.к. смысловую нагрузку это не несет */
+/* добиваться полного соответствия объекта с классом tel с макетом по pixelPerfect не стал, т.к. смысловую нагрузку это не несет */
 
 .tel {
-    position: absolute;
-    left: 125px;
-    top: 243px;
+    margin-bottom: 30px;
+    display: block;
     font-size: 60px;
     line-height: 60px;
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
-    /* по макету не ясно, должно ли быль подчеркивание email без наведения курсор или нет, поэтому решил сделать с подчеркиванием, т.к. по логике это ссылка. */
+/* по макету не ясно, должно ли быль подчеркивание email без наведения курсор или нет, поэтому решил сделать с подчеркиванием, т.к. по логике это ссылка. */
 
 .email {
-    position: absolute;
-    left: 125px;
-    top: 333px;
     font-size: 60px;
     line-height: 60px;
     color: #121212;
     border-bottom: 2px solid #121212;
-    padding-bottom: 8px;
 }
 
-    /* при наведении меняется только прозрачность ссылки */
+/* при наведении меняется  прозрачность текста и подчеркивания */
 
 .email:hover {
-    border-bottom: 2px solid #121212;
-    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(18, 18, 18, 0.5);
     opacity: 0.5;
 }
 
-    /* секция Footer */
-    
+/* секция Footer */
+
 footer {
-    position: relative;
+    width: 1400px;
+    min-width: 100%;
+    /*фикс обрезки фона при горизонтальном скролле*/
     height: 229px;
     background-color: #121212;
 }
 
-    /* применил flexbox для разнообразия */
+.footer-wrapper {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 450px;
+    height: 230px;
+}
+
+/* применил flexbox для разнообразия */
 
 .footerLinks {
-    position: absolute;
+    position:absolute;
+    top:60px;
     display: flex;
     justify-content: space-between;
-    width: 447px;
+    width: 450px;
     height: 25px;
-    top: 60px;
-    left: 470px;
 }
 
 .footerLink {
@@ -324,10 +349,10 @@ footer {
 
 .copyright {
     position: absolute;
-    left: 508px;
     bottom: 30px;
+    left: 31px;
     font-size: 20px;
     line-height: 27px;
-    opacity: 50%;
+    opacity: 0.5;
     color: #ffffff;
 }

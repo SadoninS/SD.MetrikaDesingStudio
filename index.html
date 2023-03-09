@@ -28,7 +28,6 @@
 
     <body>
         <header>
-            <nav>
                 <a href="https://sadonins.github.io/SD.MetrikaDesingStudio/">
                     <img
                         class="logo"
@@ -66,17 +65,19 @@
                         >
                     </li>
                 </ul>
-            </nav>
-            <h1>Современные и стильные интерьеры для комфортной жизни</h1>
-            <div class="header-image-chair">
-                <p class="header-p">
-                    Мы - команда квалифицированных дизайнеров и архитекторов,
-                    занимающихся разработкой и реализацией дизайн-проектов
-                </p>
-            </div>
+           
         </header>
 
         <main>
+            <section id="welcome">
+                <h1>Современные и стильные интерьеры для комфортной жизни</h1>
+                <div class="welcome-image-chair">
+                    <p class="welcome-p">
+                        Мы - команда квалифицированных дизайнеров и архитекторов,
+                        занимающихся разработкой и реализацией дизайн-проектов
+                    </p>
+                </div>
+            </section>
             <section id="about">
                 <h2>о нас</h2>
                 <p class="about-p">
@@ -147,107 +148,112 @@
                 >
             </section>
 
-            <section id="services">
-                <h2 class="services-h2">Услуги</h2>
-                <article class="service">
-                    <img
-                        class="service-image"
-                        src="images/service-planning-solution.png"
-                        alt="изображение чертежа с лежащим на нем карандашом"
-                    />
-                    <h3 class="service-description">
-                        Планировочное решение — от 2500₽/м²
-                    </h3>
-                </article>
-                <article class="service">
-                    <img
-                        class="service-image"
-                        src="images/service-design-project.png"
-                        alt="образцы цветовой гаммы"
-                    />
-                    <h3 class="service-description">
-                        Дизайн-проект — от 3000₽/м²
-                    </h3>
-                </article>
-                <article class="service">
-                    <img
-                        class="service-image"
-                        src="images/service-author-supervision.png"
-                        alt="крупный план человека, делающего изменения на  чертеже карандашом"
-                    />
-                    <h3 class="service-description">
-                        Авторский надзор — от 30 000₽ в месяц
-                    </h3>
-                </article>
-                <article class="service">
-                    <img
-                        class="service-image"
-                        src="images/service-equipment.png"
-                        alt="складские стеллажи с палетами"
-                    />
-                    <h3 class="service-description">
-                        Комплектация — 5% от стоимости спецификации
-                    </h3>
+            <section class="services">
+                <div id="services" class="sevices-wrapper">
+                    <h2 class="services-h2">Услуги</h2>
+                    <article class="service">
+                        <img
+                            class="service-image"
+                            src="images/service-planning-solution.png"
+                            alt="изображение чертежа с лежащим на нем карандашом"
+                        />
+                        <h3 class="service-description">
+                            Планировочное решение — от 2500₽/м²
+                        </h3>
+                    </article>
+                    <article class="service">
+                        <img
+                            class="service-image"
+                            src="images/service-design-project.png"
+                            alt="образцы цветовой гаммы"
+                        />
+                        <h3 class="service-description">
+                            Дизайн-проект — от 3000₽/м²
+                        </h3>
+                    </article>
+                    <article class="service">
+                        <img
+                            class="service-image"
+                            src="images/service-author-supervision.png"
+                            alt="крупный план человека, делающего изменения на  чертеже карандашом"
+                        />
+                        <h3 class="service-description">
+                            Авторский надзор — от 30 000₽ в месяц
+                        </h3>
+                    </article>
+                    <article class="service">
+                        <img
+                            class="service-image"
+                            src="images/service-equipment.png"
+                            alt="складские стеллажи с палетами"
+                        />
+                        <h3 class="service-description">
+                            Комплектация — 5% от стоимости спецификации
+                        </h3>
+                </div>
                 </article>
             </section>
 
             <section id="example">
-                <h3 class="example-p">
+                <p class="example-p">
                     Проект двухкомнатной квартиры в ЖК Лесной Пейзаж
-                </h3>
+                </p>
             </section>
 
             <section id="contacts">
-                <h2 class="contacts-h2">Контакты</h2>
-                <a
-                    href="tel:+"
-                    class="tel"
-                    >+7 935 895-45-35</a
-                >
-                <a
-                    href="mailto:hello@mail.com"
-                    class="email"
-                    >hello@mail.com</a
-                >
+                <div class="contacts-wrapper">
+                    <h2 class="contacts-h2">Контакты</h2>
+                    <a
+                        href="tel:+79358954535"
+                        class="tel"
+                        >+7 935 895-45-35</a
+                    >
+                    <a
+                        href="mailto:hello@mail.com"
+                        class="email"
+                        >hello@mail.com</a
+                    >
+                </div>
             </section>
         </main>
 
         <footer>
-            <ul class="footerLinks">
-                <li>
-                    <a
-                        class="footerLink"
-                        href="#about"
-                        >О нас</a
-                    >
-                </li>
-                <li>
-                    <a
-                        class="footerLink"
-                        href="#projects"
-                        >Проекты</a
-                    >
-                </li>
-                <li>
-                    <a
-                        class="footerLink"
-                        href="#services"
-                        >Услуги</a
-                    >
-                </li>
-                <li>
-                    <a
-                        class="footerLink"
-                        href="#contacts"
-                        >Контакты</a
-                    >
-                </li>
-            </ul>
-            <a
-                href="https://sadonins.github.io/SD.MetrikaDesingStudio/"
-                class="copyright"
-                >cтудия дизайна интерьера Метрика — 2023</a
-            >
+            <div class="footer-wrapper">
+                <ul class="footerLinks">
+                    <li>
+                        <a
+                            class="footerLink"
+                            href="#about"
+                            >О нас</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="footerLink"
+                            href="#projects"
+                            >Проекты</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="footerLink"
+                            href="#services"
+                            >Услуги</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="footerLink"
+                            href="#contacts"
+                            >Контакты</a
+                        >
+                    </li>
+                </ul>
+                <p
+                    class="copyright"
+                    >cтудия дизайна интерьера Метрика — 2023</p
+                >
+            </div>
         </footer>
     </body>
 </html>
