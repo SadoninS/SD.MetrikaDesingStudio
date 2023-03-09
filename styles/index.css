@@ -1,4 +1,4 @@
-/* совпадающие для всех элементов свойства вынесены в общий тэг */
+/* Общие для всех элементов свойства вынесены в тэг <body>. свойства font-weight, font-style не применял ввиду отсутствия необходимости, все свойства применились из подключенного шришта. свойство box-sizing помещено в reset.css */
 
 body {
     margin: 0 auto;
@@ -33,10 +33,6 @@ h2 {
     text-transform: uppercase;
 }
 
-ul li {
-    display: inline;
-}
-
 a {
     text-decoration: none;
     cursor: pointer;
@@ -46,6 +42,7 @@ a {
 /* далее свойства сгруппированы по секциям */
 
     /* секция Nav */
+
 nav {
     position: relative;
     height: 128px;
@@ -63,11 +60,14 @@ nav {
 }
 
 .navLink {
+    display: inline;
     margin-right: 57px;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
 }
+
+    /* применил nth-last-child, т.к. это быдло требование к ДЗ, но также мог обойтись абсолютным позиционированием, расположением по правому краю родительского блока и отступом слева каждого элемента списка, что на мой взгляд было проще и лаконичнее */
 
 ul li:nth-last-child(1){
     margin-right: 0px;
@@ -79,6 +79,7 @@ ul li:nth-last-child(1){
 }
 
     /* секция Header */
+
 header {
     margin: 0 125px 150px 125px;
 }
@@ -100,6 +101,7 @@ header {
 }
 
     /* секция About */
+
 #about {
     margin: 0 0 150px 125px;
     width: 1051px;
@@ -129,6 +131,7 @@ header {
 }
 
     /* секция Projects */
+
 #projects {
     margin: 0 auto 150px;
     width: 1150px;
@@ -167,12 +170,15 @@ header {
     border-radius: 5px;
 }
 
+    /* при наведении меняется стиль кнопки-ссылки */
+
 .showAllProjects:hover {
     color: #ffffff;
     background-color: #ad1818;
 }
 
     /* секция Services */
+
 #services {
     margin: 0 auto;
     height: 1844px;
@@ -201,6 +207,7 @@ header {
 }
 
     /* секция Example */
+
 #example {
     height: 717px;
     position: relative;
@@ -222,6 +229,7 @@ header {
 }
 
     /* секция Contacts */
+
 #contacts {
     position: relative;
     height: 553px;
@@ -251,6 +259,8 @@ header {
     background-size: cover;
 }
 
+    /* добиваться полного соответствия объекта с классом tel с макетом по pixelPerfect не стал, т.к. смысловую нагрузку это не несет */
+
 .tel {
     position: absolute;
     left: 125px;
@@ -259,6 +269,8 @@ header {
     line-height: 60px;
     color: #121212;
 }
+
+    /* по макету не ясно, должно ли быль подчеркивание email без наведения курсор или нет, поэтому решил сделать с подчеркиванием, т.к. по логике это ссылка. */
 
 .email {
     position: absolute;
@@ -271,6 +283,8 @@ header {
     padding-bottom: 8px;
 }
 
+    /* при наведении меняется только прозрачность ссылки */
+
 .email:hover {
     border-bottom: 2px solid #121212;
     padding-bottom: 8px;
@@ -278,11 +292,14 @@ header {
 }
 
     /* секция Footer */
+    
 footer {
     position: relative;
     height: 229px;
     background-color: #121212;
 }
+
+    /* применил flexbox для разнообразия */
 
 .footerLinks {
     position: absolute;
