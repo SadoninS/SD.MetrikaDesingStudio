@@ -23,7 +23,7 @@ h2 {
     text-transform: uppercase;
 }
 
-li {
+ul li {
     display: inline;
 }
 
@@ -46,19 +46,23 @@ nav {
 .navLinks {
     position: absolute;
     top: 33px;
-    right: 0px;
+    left: 685px;
 }
 
+
 .navLink {
-    margin-left: 60px;
+    margin-right: 57px;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
 }
 
+ul li:nth-last-child(1){
+    margin-right: 0px;
+}
 .navLink:hover {
     border-bottom: 1px solid #121212;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
     opacity: 0.5;
 }
 
@@ -68,7 +72,7 @@ header {
 
 .header-image-chair {
     position: relative;
-    background-image: url(../images/header-1.png);
+    background-image: url(../images/header-chair.png);
     height: 500px;
 }
 
@@ -79,6 +83,7 @@ header {
     width: 430px;
     font-size: 20px;
     line-height: 27px;
+    letter-spacing: -0.03em;
     color: #ffffff;
 }
 
@@ -95,7 +100,7 @@ header {
     font-size: 45px;
     line-height: 61px;
     letter-spacing: -0.03em;
-    color: #000000;
+    color: #121212;
 }
 
 .about-btn-services {
@@ -123,13 +128,14 @@ header {
 }
 
 .project-image {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .project-location {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     font-size: 30px;
     line-height: 41px;
+    letter-spacing: -0.03em;
     color: #121212;
 }
 
@@ -144,6 +150,7 @@ header {
     text-decoration: none;
     font-size: 30px;
     line-height: 153px;
+    letter-spacing: -0.03em;
     text-align: center;
     color: #ad1818;
     border: 1px solid #ad1818;
@@ -179,6 +186,7 @@ header {
     margin-bottom: 60px;
     font-size: 30px;
     line-height: 41px;
+    letter-spacing: -0.03em;
     color: #ffffff;
 }
 
@@ -224,8 +232,8 @@ header {
     margin-top: -35px;
     position: absolute;
     content: '';
-    height: 22px;
-    width: 13px;
+    height: 21px;
+    width: 12px;
     display: block;
     background-image: url('../images/icon-cellphone.png');
     background-size: cover;
@@ -249,6 +257,8 @@ header {
     line-height: 60px;
     letter-spacing: -0.03em;
     color: #121212;
+    border-bottom: 2px solid #121212;
+    padding-bottom: 8px;
 }
 
 .email:hover {
@@ -260,17 +270,17 @@ header {
 footer {
     position: relative;
     height: 229px;
-    background-color: #333333;
+    background-color: #121212;
 }
 
 .footerLinks {
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: 447px;
     height: 25px;
     top: 60px;
-    left: 475px;
+    left: 470px;
 }
 
 .footerLink {
@@ -281,17 +291,16 @@ footer {
 }
 
 .footerLink:hover {
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: 2px;
     opacity: 0.5;
 }
 
 .copyright {
     position: absolute;
-    left: 493px;
+    left: 508px;
     bottom: 30px;
     font-size: 20px;
     line-height: 27px;
     opacity: 50%;
+    letter-spacing: -0.03em;
     color: #ffffff;
 }
