@@ -4,8 +4,6 @@ body {
     margin: 0 auto;
     width: 1400px;
     min-width: 100%; 
-    /*лечит прилипание отдельных секций к левой стороне области видимости при увеличении масштаба*/
-
     font-family: "Manrope", Courier, monospace;
     letter-spacing: -0.03em;
 }
@@ -194,9 +192,7 @@ ul li:nth-last-child(1) {
 /* секция Services */
 
 .services {
-    width: 1400px;
     min-width: 100%;
-    /*фикс обрезки фона при горизонтальном скролле*/
     height: 1844px;
     background-color: #121212;
     padding: 150px 125px;
@@ -229,9 +225,7 @@ ul li:nth-last-child(1) {
 /* секция Example */
 
 #example {
-    width: 1400px;
     min-width: 100%;
-    /*фикс обрезки фона при горизонтальном скролле*/
     height: 717px;
     position: relative;
     background: url(../images/example-bedroom.png);
@@ -310,9 +304,7 @@ ul li:nth-last-child(1) {
 /* секция Footer */
 
 footer {
-    width: 1400px;
     min-width: 100%;
-    /*фикс обрезки фона при горизонтальном скролле*/
     height: 229px;
     background-color: #121212;
 }
