@@ -3,7 +3,7 @@
 body {
     margin: 0 auto;
     width: 1400px;
-    min-width: 100%; 
+    min-width: 100%;
     font-family: "Manrope", Courier, monospace;
     letter-spacing: -0.03em;
 }
@@ -320,8 +320,8 @@ footer {
 /* применил flexbox для разнообразия */
 
 .footerLinks {
-    position:absolute;
-    top:60px;
+    position: absolute;
+    top: 60px;
     display: flex;
     justify-content: space-between;
     width: 450px;
