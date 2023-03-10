@@ -191,7 +191,7 @@ ul li:nth-last-child(1) {
 
 /* секция Services */
 
-.services {
+#services {
     min-width: 100%;
     height: 1844px;
     background-color: #121212;
