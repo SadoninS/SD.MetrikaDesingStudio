@@ -227,22 +227,29 @@ ul li:nth-last-child(1) {
 #example {
     min-width: 100%;
     height: 717px;
-    position: relative;
+    /* position: relative; */
     background: url(../images/example-bedroom.png);
     background-repeat: no-repeat;
     background-position: 40%;
     background-size: cover;
 }
 
+.example-text-wrapper{
+    margin: 0 auto;
+    width: 1150px;
+    position: relative;
+
+}
+
 .example-p {
     position: absolute;
-    bottom: 60px;
+    top: 575px;
     left: 125px;
     width: 443px;
-    height: 82px;
     font-size: 30px;
     line-height: 41px;
     color: #FFFFFF;
+    
 }
 
 /* секция Contacts */
