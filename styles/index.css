@@ -1,17 +1,32 @@
+@media (max-width: 1200px) {
+  .h1 {
+    margin-bottom: 30px;
+    width: 956px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #121212;
+  } 
+}
+
+@media (max-width: 960px) {}
+
+@media (max-width: 375px) {}
+
+
 /* Общие для всех элементов свойства вынесены в тэг <body>. свойства font-weight, font-style не применял ввиду отсутствия необходимости, все свойства применились из подключенного шришта. свойство box-sizing помещено в reset.css */
 
 body {
-    margin: 0 auto;
-    width: 1400px;
-    min-width: 100%;
-    font-family: "Manrope", Courier, monospace;
-    letter-spacing: -0.03em;
+  margin: 0 auto;
+  width: 1400px;
+  min-width: 100%;
+  font-family: "Manrope", Courier, monospace;
+  letter-spacing: -0.03em;
 }
 
 /* по списку типовых ошибок ясно, что достаточно вынести свойство letter-spacing в общий тэг, но, из-за особенностей наследования, для проверки PixelPerfect потребовалось применить его повторно к следующим элементам. там где нет нобходимости свойство не применялось. */
 
 h1,
-.welcome-p,
+.intro-description,
 .about-p,
 .about-btn-services,
 .project-location,
@@ -19,338 +34,339 @@ h1,
 .service-description,
 .email,
 .copyright {
-    letter-spacing: -0.03em;
+  letter-spacing: -0.03em;
 }
 
 /* далее следует группа элементов, имеющие общие свойства */
 
-h1 {
-    margin-bottom: 30px;
-    width: 956px;
-    font-size: 60px;
-    line-height: 60px;
-    color: #121212;
-}
-
 h2 {
-    display: block;
-    margin-bottom: 30px;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
+  display: block;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #121212;
-}
+  text-decoration: none;
+  cursor: pointer;
+  color: #121212;
+} */
 
 /* далее свойства сгруппированы по секциям */
 
 /* секция Header */
 
-header {
-    margin: 0 auto;
-    position: relative;
-    width: 1150px;
-    height: 128px;
+.header {
+  margin: 0 auto;
+  position: relative;
+  width: 1150px;
+  height: 128px;
 }
 
 .logo {
-    position: absolute;
-    top: 33px;
+  position: absolute;
+  top: 33px;
 }
 
 .navLinks {
-    position: absolute;
-    top: 33px;
-    left: 685px;
+  position: absolute;
+  top: 33px;
+  left: 685px;
 }
 
 .navLink {
-    display: inline;
-    margin-right: 57px;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
+  display: inline;
+  margin-right: 57px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
 /* продемонстрировал применение nth-last-child, т.к. это было требование к ДЗ, но также мог обойтись абсолютным позиционированием, расположением списка по правому краю родительского блока и отступом 60px(как в макете) слева каждого элемента списка, что на мой взгляд было проще и лаконичнее */
 
 ul li:nth-last-child(1) {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .navLink:hover {
-    border-bottom: 1px solid rgba(18, 18, 18, 0.5);
-    padding-bottom: 1px;
-    opacity: 0.5;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.5);
+  padding-bottom: 1px;
+  opacity: 0.5;
 }
 
-/* секция welcome */
+/* Блок Main */
 
-#welcome {
-    margin: 0 auto;
-    width: 1150px;
+main {
+  margin: 0 auto;
+  width: 1150px;
 }
 
-.welcome-image-chair {
-    margin-bottom: 150px;
-    position: relative;
-    background-image: url(../images/welcome-chair.png);
-    height: 500px;
+.h1 {
+  margin-bottom: 30px;
+  width: 956px;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+} 
+
+/* секция intro */
+
+#intro {
+  margin: 0 auto 150px;
 }
 
-.welcome-p {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    width: 430px;
-    font-size: 20px;
-    line-height: 27px;
-    color: #ffffff;
+.intro-backgroung-image-wrapper {
+  position: relative;
+  background-image: url(../images/intro-chair.png);
+  height: 500px;
+}
+
+.intro-description {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 430px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
 /* секция About */
 
 #about {
-    margin: 0 auto;
-    width: 1150px;
+  margin: 0 auto;
+  /* width: 1150px; */
 }
 
 .about-p {
-    margin-bottom: 30px;
-    width: 1048px;
-    height: 366px;
-    font-size: 45px;
-    line-height: 61px;
-    color: #121212;
+  margin-bottom: 30px;
+  width: 1048px;
+  height: 366px;
+  font-size: 45px;
+  line-height: 61px;
+  color: #121212;
 }
 
 .about-btn-services {
-    margin-bottom: 150px;
-    padding: 20px 40px;
-    display: block;
-    width: 255px;
-    border-radius: 5px;
-    font-size: 20px;
-    line-height: 27px;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #ad1818;
+  margin-bottom: 150px;
+  padding: 20px 40px;
+  display: block;
+  width: 255px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 27px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #ad1818;
 
 }
 
 /* секция Projects */
 
 #projects {
-    margin: 0 auto 150px;
-    width: 1150px;
+  margin: 0 auto 150px;
+  /* width: 1150px; */
 }
 
 .project {
-    height: 548px;
-    margin-bottom: 90px;
+  height: 548px;
+  margin-bottom: 90px;
 }
 
 .project-image {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .project-location {
-    margin-bottom: 18px;
-    font-size: 30px;
-    line-height: 41px;
-    color: #121212;
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #121212;
 }
 
 .details {
-    font-size: 20px;
-    color: #ad1818;
+  font-size: 20px;
+  color: #ad1818;
 }
 
 .showAllProjects {
-    display: block;
-    height: 153px;
-    text-decoration: none;
-    font-size: 30px;
-    line-height: 153px;
-    text-align: center;
-    color: #ad1818;
-    border: 1px solid #ad1818;
-    border-radius: 5px;
+  display: block;
+  height: 153px;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 153px;
+  text-align: center;
+  color: #ad1818;
+  border: 1px solid #ad1818;
+  border-radius: 5px;
 }
 
 /* при наведении меняется стиль кнопки-ссылки */
 
 .showAllProjects:hover {
-    color: #ffffff;
-    background-color: #ad1818;
+  color: #ffffff;
+  background-color: #ad1818;
 }
 
 /* секция Services */
 
 #services {
-    min-width: 100%;
-    height: 1844px;
-    background-color: #121212;
-    padding: 150px 125px;
+  min-width: 100%;
+  height: 1844px;
+  background-color: #121212;
+  padding: 150px 125px;
 }
 
 .sevices-wrapper {
-    margin: 0 auto;
-    width: 1150px;
+  margin: 0 auto;
+  width: 1150px;
 }
 
 .services-h2 {
-    color: #ffffff;
-}
-
-.servisesLink {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .service-image {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .service-description {
-    margin-bottom: 60px;
-    font-size: 30px;
-    line-height: 41px;
-    color: #ffffff;
+  margin-bottom: 60px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
 }
 
 /* секция Example */
 
 #example {
-    min-width: 100%;
-    height: 717px;
-    /* position: relative; */
-    background: url(../images/example-bedroom.png);
-    background-repeat: no-repeat;
-    background-position: 40%;
-    background-size: cover;
+  min-width: 100%;
+  height: 717px;
+  /* position: relative; */
+  background: url(../images/example-bedroom.png);
+  background-repeat: no-repeat;
+  background-position: 40%;
+  background-size: cover;
 }
 
-.example-text-wrapper{
-    margin: 0 auto;
-    width: 1150px;
-    position: relative;
+.example-text-wrapper {
+  margin: 0 auto;
+  width: 1150px;
+  position: relative;
 
 }
 
 .example-p {
-    position: absolute;
-    top: 575px;
-    width: 443px;
-    font-size: 30px;
-    line-height: 41px;
-    color: #FFFFFF;
-    
+  position: absolute;
+  top: 575px;
+  width: 443px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #FFFFFF;
+
 }
 
 /* секция Contacts */
 
 #contacts {
-    margin: 0 auto;
-    width: 1150px;
-    position: relative;
-    height: 553px;
-    padding: 150px 0px;
+  margin: 0 auto;
+  width: 1150px;
+  position: relative;
+  height: 553px;
+  padding: 150px 0px;
 }
 
 .contacts-wrapper {
-    position: absolute;
-    width: 473px;
-    height: 217px;
+  position: absolute;
+  width: 473px;
+  height: 217px;
 }
 
 .contacts-h2::before {
-    margin-bottom: 13px;
-    display: block;
-    content: '';
-    height: 24px;
-    width: 24px;
-    background-image: url('../images/contacts-icon-cellphone.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
+  margin-bottom: 13px;
+  display: block;
+  content: '';
+  height: 24px;
+  width: 24px;
+  background-image: url('../images/contacts-icon-cellphone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
 
 }
 
 /* добиваться полного соответствия объекта с классом tel с макетом по pixelPerfect не стал, т.к. смысловую нагрузку это не несет */
 
 .tel {
-    margin-bottom: 30px;
-    display: block;
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: -0.03em;
-    color: #121212;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.03em;
+  color: #121212;
 }
 
 /* по макету не ясно, должно ли быль подчеркивание email без наведения курсор или нет, поэтому решил сделать с подчеркиванием, т.к. по логике это ссылка. */
 
 .email {
-    font-size: 60px;
-    line-height: 60px;
-    color: #121212;
-    border-bottom: 2px solid #121212;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  border-bottom: 2px solid #121212;
 }
 
 /* при наведении меняется  прозрачность текста и подчеркивания */
 
 .email:hover {
-    border-bottom: 2px solid rgba(18, 18, 18, 0.5);
-    opacity: 0.5;
+  border-bottom: 2px solid rgba(18, 18, 18, 0.5);
+  opacity: 0.5;
 }
 
 /* секция Footer */
 
 footer {
-    min-width: 100%;
-    height: 229px;
-    background-color: #121212;
+  min-width: 100%;
+  height: 229px;
+  background-color: #121212;
 }
 
 .footer-wrapper {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 450px;
-    height: 230px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 450px;
+  height: 230px;
 }
 
 /* применил flexbox для разнообразия */
 
 .footerLinks {
-    position: absolute;
-    top: 60px;
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-    height: 25px;
+  position: absolute;
+  top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 25px;
 }
 
 .footerLink {
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footerLink:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .copyright {
-    position: absolute;
-    bottom: 30px;
-    left: 31px;
-    font-size: 20px;
-    line-height: 27px;
-    opacity: 0.5;
-    color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 31px;
+  font-size: 20px;
+  line-height: 27px;
+  opacity: 0.5;
+  color: #ffffff;
 }
