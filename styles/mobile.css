@@ -86,6 +86,9 @@
   main {
     padding: 0 8px;
   }
+  section{
+    margin-bottom:50px;
+  }
 
   h1 {
     width: 100%;
