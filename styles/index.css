@@ -1,24 +1,9 @@
-@media (max-width: 1200px) {
-  .h1 {
-    margin-bottom: 30px;
-    width: 956px;
-    font-size: 60px;
-    line-height: 60px;
-    color: #121212;
-  } 
-}
-
-@media (max-width: 960px) {}
-
-@media (max-width: 375px) {}
-
-
 /* Общие для всех элементов свойства вынесены в тэг <body>. свойства font-weight, font-style не применял ввиду отсутствия необходимости, все свойства применились из подключенного шришта. свойство box-sizing помещено в reset.css */
 
 body {
-  margin: 0 auto;
+  /* margin: 0 auto;
   width: 1400px;
-  min-width: 100%;
+  min-width: 100%; */
   font-family: "Manrope", Courier, monospace;
   letter-spacing: -0.03em;
 }
@@ -27,7 +12,7 @@ body {
 
 h1,
 .intro-description,
-.about-p,
+.about-description,
 .about-btn-services,
 .project-location,
 .showAllProjects,
@@ -40,7 +25,6 @@ h1,
 /* далее следует группа элементов, имеющие общие свойства */
 
 h2 {
-  display: block;
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 25px;
@@ -51,13 +35,13 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #121212;
-} */
+}
 
 /* далее свойства сгруппированы по секциям */
 
 /* секция Header */
 
-.header {
+header {
   margin: 0 auto;
   position: relative;
   width: 1150px;
@@ -102,19 +86,20 @@ main {
   width: 1150px;
 }
 
-.h1 {
+section{
+  margin: 0 auto 150px;
+}
+
+h1 {
   margin-bottom: 30px;
   width: 956px;
   font-size: 60px;
   line-height: 60px;
   color: #121212;
-} 
+}
 
 /* секция intro */
 
-#intro {
-  margin: 0 auto 150px;
-}
 
 .intro-backgroung-image-wrapper {
   position: relative;
@@ -134,22 +119,17 @@ main {
 
 /* секция About */
 
-#about {
-  margin: 0 auto;
-  /* width: 1150px; */
-}
 
-.about-p {
+.about-description {
   margin-bottom: 30px;
   width: 1048px;
-  height: 366px;
+  /* height: 366px; */
   font-size: 45px;
   line-height: 61px;
   color: #121212;
 }
 
 .about-btn-services {
-  margin-bottom: 150px;
   padding: 20px 40px;
   display: block;
   width: 255px;
@@ -164,18 +144,13 @@ main {
 
 /* секция Projects */
 
-#projects {
-  margin: 0 auto 150px;
-  /* width: 1150px; */
-}
-
 .project {
   height: 548px;
   margin-bottom: 90px;
 }
 
 .project-image {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .project-location {
@@ -187,12 +162,12 @@ main {
 
 .details {
   font-size: 20px;
+  line-height: 27px;
   color: #ad1818;
 }
 
 .showAllProjects {
   display: block;
-  height: 153px;
   text-decoration: none;
   font-size: 30px;
   line-height: 153px;
@@ -243,7 +218,6 @@ main {
 #example {
   min-width: 100%;
   height: 717px;
-  /* position: relative; */
   background: url(../images/example-bedroom.png);
   background-repeat: no-repeat;
   background-position: 40%;

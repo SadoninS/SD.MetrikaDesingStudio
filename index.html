@@ -2,17 +2,25 @@
 <html lang="ru">
 
 <head>
-  <link rel="stylesheet" href="styles/reset.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial scale 1.0">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/index.css" />
-  <meta charset="UTF-8" />
+  <link rel="stylesheet" media="screen and (max-width: 1149px)" href="styles/1150px.css">
+  <link rel="stylesheet" media="screen and (max-width: 959px)" href="styles/tablet.css">
+  <link rel="stylesheet" media="screen and (max-width: 374px)" href="styles/mobile.css">
+  
   <title>Metrika Design Studio</title>
+  <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <header class="header">
+  <!-- <header class="header">
     <a href="https://sadonins.github.io/SD.MetrikaDesingStudio/">
       <img class="logo" src="images/metrika-logo.png" alt="логотип студии метрика" />
     </a>
@@ -31,12 +39,11 @@
       </li>
     </ul>
 
-  </header>
+  </header> -->
 
   <main>
-    
+    <h1>Современные и стильные интерьеры для комфортной жизни</h1>
     <section id="intro">
-      <h1 class="h1">Современные и стильные интерьеры для комфортной жизни</h1>
         <div class="intro-backgroung-image-wrapper">
           <p class="intro-description">
             Мы - команда квалифицированных дизайнеров и архитекторов,
@@ -44,9 +51,9 @@
           </p>
         </div>
     </section>
-    <!-- <section id="about">
+    <section id="about">
       <h2>о нас</h2>
-      <p class="about-p">
+      <p class="about-description">
         Студия основана в 2011 году. Полностью отдаемся
         проектированию и реализации интерьеров. К нам обращаются за
         уютом, индивидуальными решениями и практичностью. Находим
@@ -54,38 +61,53 @@
         каждой детали — нацелены на результат.
       </p>
       <a class="about-btn-services" href="#services">Посмотреть услуги</a>
-    </section> -->
+    </section>
 
-    <!-- <section id="projects">
+    <section id="projects">
       <h2>проекты</h2>
       <article class="project">
-        <img class="project-image" src="images/project-right-bank.png"
-          alt="проект дизайна интерьера с окнами в пол, угловым диваном и гитарой" />
+          <picture >
+            <source media="(max-width:375px)" srcset="images/project-right-bank-375.png" type="image/png">
+            <source media="(max-width:960px)" srcset="images/project-right-bank-960.png" type="image/png">
+            <img class="project-image"
+              src="images/project-right-bank.png" 
+              alt="проект дизайна интерьера с окнами в пол, угловым диваном и гитарой">
+   </picture>
         <p class="project-location">
           ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
         </p>
         <a class="details" href="#">Подробнее →</a>
       </article>
       <article class="project">
-        <img class="project-image" src="images/project-norway-park.png"
-          alt="проект дизайна интерьера с телевизором на стене, диваном с декоративными желтыми подушками, цветком в горшке и журнальным столиком" />
+          <picture>
+            <source media="(max-width:375px)" srcset="images/project-norway-park-375.png" type="image/png">
+              <source media="(max-width:960px)" srcset="images/project-norway-park-960.png" type="image/png">
+              <img class="project-image"
+                src="images/project-norway-park.png"
+                alt="проект дизайна интерьера с телевизором на стене, диваном с декоративными желтыми подушками, цветком в горшке и журнальным столиком">
+          </picture>
         <p class="project-location">
-          ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
+          ЖК НОРВЕЖСКИЙ ПАРК — 75 м² — 2023
         </p>
         <a class="details" href="#">Подробнее →</a>
       </article>
       <article class="project">
-        <img class="project-image" src="images/project-pine-lakes.png"
-          alt="проект дизайна интерьера кухни-гостинной с разделением зон прозрачным остеклением в пол, кухонным столом и стульями и лестницей на второй этаж" />
+          <picture>
+            <source media="(max-width:375px)" srcset="images/project-pine-lakes-375.png" type="image/png">
+              <source media="(max-width:960px)" srcset="images/project-pine-lakes-960.png" type="image/png">
+              <img class="project-image"
+                src="images/project-pine-lakes.png"
+                alt="проект дизайна интерьера кухни-гостинной с разделением зон прозрачным остеклением в пол, кухонным столом и стульями и лестницей на второй этаж">
+          </picture>
         <p class="project-location">
-          ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
+          ЖК СОСНОВСКИЕ ОЗЕРА — 94 м² — 2022
         </p>
         <a class="details" href="#">Подробнее →</a>
       </article>
       <a href="#projects" class="showAllProjects">Смотреть все проекты</a>
     </section>
 
-    <section id="services">
+    <!-- <section id="services">
       <div id="servicesAnchor" class="sevices-wrapper">
         <h2 class="services-h2">Услуги</h2>
         <article class="service">

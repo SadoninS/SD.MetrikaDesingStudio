@@ -1,0 +1,23 @@
+    main {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .intro-backgroung-image-wrapper {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 25%;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    .about-description {
+        width: 100%;
+    }

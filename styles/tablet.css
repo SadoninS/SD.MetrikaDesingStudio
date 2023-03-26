@@ -1,0 +1,87 @@
+  .header {
+    width: 100%;
+  }
+
+  main {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  section {
+    margin-bottom: 120px;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    width: 802px;
+    font-size: 50px;
+  }
+
+  .intro-backgroung-image-wrapper {
+    position: relative;
+    height: 400px;
+    background-image: url(../images/intro-chair-960.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
+  }
+
+  .about-description {
+    width: 810px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+
+  .about-btn-services {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .project {
+    margin-bottom: 80px;
+    height: 100%;
+  }
+
+  .project:last-of-type {
+    margin-bottom: 102px;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-location {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+
+/* для узких планшетов или портретного ориентирования */
+@media (max-width: 802px) {
+  section {
+    margin-bottom: 100px;
+  }
+
+  h1 {
+    line-height: 40px;
+    width: 100%;
+    font-size: 35px;
+  }
+
+  .intro-description {
+    width: 350px;
+    font-size: 18px;
+    line-height: 24px;
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .about-description {
+    width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+

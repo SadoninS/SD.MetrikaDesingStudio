@@ -1,0 +1,123 @@
+  main {
+    padding: 0 13px;
+  }
+
+  section {
+    margin-bottom: 80px;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    width: 315px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+
+  .intro-backgroung-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 304px;
+    background-image: url(../images/intro-chair-375.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10%;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .intro-description {
+    bottom: 15px;
+    left: 15px;
+    width: 310px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-description {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about-btn-services {
+    padding: 0;
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .project {
+    margin-bottom: 49px;
+  }
+
+  .project:last-of-type {
+    margin-bottom: 60px;
+
+  }
+
+  .project-image {
+    margin-bottom: 20px;
+  }
+
+  .project-location {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .details {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .showAllProjects {
+    font-size: 22px;
+    line-height: 100px;
+
+  }
+
+
+/* для узких смартфонов */
+@media (max-width: 305px) {
+  main {
+    padding: 0 8px;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .intro-description {
+    padding-right: 23px;
+    bottom: 15px;
+    left: 15px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .about-description {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .project-location {
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .showAllProjects {
+    padding: 0;
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+}
