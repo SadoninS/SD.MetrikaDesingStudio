@@ -11,7 +11,7 @@
 
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/index.css" />
-  <link rel="stylesheet" media="screen and (max-width: 1149px)" href="styles/1150px.css">
+  <link rel="stylesheet" media="screen and (max-width: 1180px)" href="styles/1180px.css">
   <link rel="stylesheet" media="screen and (max-width: 959px)" href="styles/tablet.css">
   <link rel="stylesheet" media="screen and (max-width: 374px)" href="styles/mobile.css">
 
@@ -65,112 +65,102 @@
 
     <section id="projects">
       <h2>проекты</h2>
-      <article class="project">
-        <picture>
-          <source media="(max-width:375px)" srcset="images/project-right-bank-375.png" type="image/png">
-          <source media="(max-width:960px)" srcset="images/project-right-bank-960.png" type="image/png">
-          <img class="project-image" src="images/project-right-bank.png"
-            alt="проект дизайна интерьера с окнами в пол, угловым диваном и гитарой">
-        </picture>
-        <p class="project-location">
-          ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
-        </p>
-        <a class="details" href="#">Подробнее →</a>
-      </article>
-      <article class="project">
-        <picture>
-          <source media="(max-width:375px)" srcset="images/project-norway-park-375.png" type="image/png">
-          <source media="(max-width:960px)" srcset="images/project-norway-park-960.png" type="image/png">
-          <img class="project-image" src="images/project-norway-park.png"
-            alt="проект дизайна интерьера с телевизором на стене, диваном с декоративными желтыми подушками, цветком в горшке и журнальным столиком">
-        </picture>
-        <p class="project-location">
-          ЖК НОРВЕЖСКИЙ ПАРК — 75 м² — 2023
-        </p>
-        <a class="details" href="#">Подробнее →</a>
-      </article>
-      <article class="project">
-        <picture>
-          <source media="(max-width:375px)" srcset="images/project-pine-lakes-375.png" type="image/png">
-          <source media="(max-width:960px)" srcset="images/project-pine-lakes-960.png" type="image/png">
-          <img class="project-image" src="images/project-pine-lakes.png"
-            alt="проект дизайна интерьера кухни-гостинной с разделением зон прозрачным остеклением в пол, кухонным столом и стульями и лестницей на второй этаж">
-        </picture>
-        <p class="project-location">
-          ЖК СОСНОВСКИЕ ОЗЕРА — 94 м² — 2022
-        </p>
-        <a class="details" href="#">Подробнее →</a>
-      </article>
+      <ul>
+        <li class="project">
+          <picture>
+            <source media="(max-width:375px)" srcset="images/project-right-bank-375.png" type="image/png">
+            <source media="(max-width:960px)" srcset="images/project-right-bank-960.png" type="image/png">
+            <source media="(max-width:1180px)" srcset="images/project-right-bank.png" type="image/png">
+            <img class="project-image" src="images/project-right-bank.png"
+              alt="проект дизайна интерьера с окнами в пол, угловым диваном и гитарой">
+          </picture>
+          <p class="project-location">
+            ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
+          </p>
+          <a class="details" href="#">Подробнее →</a>
+        </li>
+        <li class="project">
+          <picture>
+            <source media="(max-width:375px)" srcset="images/project-norway-park-375.png" type="image/png">
+            <source media="(max-width:960px)" srcset="images/project-norway-park-960.png" type="image/png">
+            <img class="project-image" src="images/project-norway-park.png"
+              alt="проект дизайна интерьера с телевизором на стене, диваном с декоративными желтыми подушками, цветком в горшке и журнальным столиком">
+          </picture>
+          <p class="project-location">
+            ЖК НОРВЕЖСКИЙ ПАРК — 75 м² — 2023
+          </p>
+          <a class="details" href="#">Подробнее →</a>
+        </li>
+        <li class="project">
+          <picture>
+            <source media="(max-width:375px)" srcset="images/project-pine-lakes-375.png" type="image/png">
+            <source media="(max-width:960px)" srcset="images/project-pine-lakes-960.png" type="image/png">
+            <img class="project-image" src="images/project-pine-lakes.png"
+              alt="проект дизайна интерьера кухни-гостинной с разделением зон прозрачным остеклением в пол, кухонным столом и стульями и лестницей на второй этаж">
+          </picture>
+          <p class="project-location">
+            ЖК СОСНОВСКИЕ ОЗЕРА — 94 м² — 2022
+          </p>
+          <a class="details" href="#">Подробнее →</a>
+        </li>
+      </ul>
       <a href="#projects" class="showAllProjects">Смотреть все проекты</a>
     </section>
 
     <section id="services">
 
-        <div class="services-wrapper-center">
-          <h2 id="servicesAnchor">Услуги</h2>
-          
-          
-                <div class="services-wrapper-flexbox">
+      <div class="services-wrapper-center">
+
+        <h2 id="servicesAnchor">Услуги</h2>
+
+        <div class="services-wrapper-flexbox">
+
           <div class="service-wrapper-flex-item">
-            <div class="service-img-wrapper-planning-solution">
-              <p class="service-price-wrapper">от 2500₽/м²</p>
-            </div>
+            <picture>
+              <source>
+              <source>
+              <source>
+              <img class="service-image" src="images/desktop/services/planning-solution.png"
+                alt="планировачные решения">
+            </picture>
             <p class="service-description">Планировочные решения</p>
+            <p class="service-price-wrapper">от 2500₽/м²</p>
           </div>
           <div class="service-wrapper-flex-item">
-            <div class="service-img-wrapper-design-project">
-              <p class="service-price-wrapper">от 3000₽/м²</p>
-            </div>
+            <picture>
+              <source>
+              <source>
+              <source>
+              <img class="service-image" src="images/desktop/services/design-project.png" alt="планировочные решения">
+            </picture>
             <p class="service-description">Дизайн проект</p>
+            <p class="service-price-wrapper">от 3000₽/м²</p>
           </div>
+
           <div class="service-wrapper-flex-item">
-            <div class="service-img-wrapper-author-supervision">
-              <p class="service-price-wrapper">от 30 000₽/мес</p>
-            </div>
-            <p class="service-description">Авторский надзор
-            </p>
+            <picture>
+              <source>
+              <source>
+              <source>
+              <img class="service-image" src="images/desktop/services/author-supervision.png" alt="Авторский надзор">
+            </picture>
+            <p class="service-description">Авторский надзор</p>
+            <p class="service-price-wrapper">от 30 000₽/мес</p>
           </div>
+
           <div class="service-wrapper-flex-item">
-            <div class="service-img-wrapper-equipment">
-              <p class="service-price-wrapper">5% от стоимости</p>
-            </div>
+            <picture>
+              <source>
+              <source>
+              <source>
+              <img class="service-image" src="images/desktop/services/equipment.png" alt="Комплектация">
+            </picture>
             <p class="service-description">Комплектация</p>
+            <p class="service-price-wrapper">5% от стоимости</p>
           </div>
-                </div>
+
         </div>
-
-
-
-
-
-      <!--
-        <article class="service">
-          <img class="service-image" src="images/service-planning-solution.png"
-            alt="изображение чертежа с лежащим на нем карандашом" />
-          <p class="service-description">
-            Планировочное решение — от 2500₽/м²
-          </p>
-        </article>
-        <article class="service">
-          <img class="service-image" src="images/service-design-project.png" alt="образцы цветовой гаммы" />
-          <p class="service-description">
-            Дизайн-проект — от 3000₽/м²
-          </p>
-        </article>
-        <article class="service">
-          <img class="service-image" src="images/service-author-supervision.png"
-            alt="крупный план человека, делающего изменения на  чертеже карандашом" />
-          <p class="service-description">
-            Авторский надзор — от 30 000₽ в месяц
-          </p>
-        </article>
-        <article class="service">
-          <img class="service-image" src="images/service-equipment.png" alt="складские стеллажи с палетами" />
-          <p class="service-description">
-            Комплектация — 5% от стоимости спецификации
-          </p> 
       </div>
-      </article> -->
     </section>
     <!-- 
     <section id="example">
