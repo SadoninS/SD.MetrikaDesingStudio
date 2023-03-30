@@ -1,3 +1,6 @@
+/* по макету */
+
+@media (max-width: 960px) {
   .header {
     width: 100%;
   }
@@ -11,7 +14,6 @@
   }
 
   h1 {
-    margin-bottom: 30px;
     width: 802px;
     font-size: 50px;
   }
@@ -19,23 +21,19 @@
   .intro-backgroung-image-wrapper {
     position: relative;
     height: 400px;
-    background-image: url(../images/intro-chair-960.png);
-    background-repeat: no-repeat;
+    background: url(../images/intro-chair-960.png) 25% center/cover no-repeat, rgba(12, 12, 12, 0.5);
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position: 25%;
+    background-position: 25%; */
   }
 
   .about-description {
-    width: 810px;
+    width: 80%;
     font-size: 35px;
     line-height: 48px;
   }
 
-  .about-btn-services {
-    width: 100%;
-    text-align: center;
-
-  }
+ 
 
   .project {
     margin-bottom: 80px;
@@ -56,31 +54,81 @@
     line-height: 34px;
   }
 
-
-/* для узких планшетов или портретного ориентирования */
-@media (max-width: 802px) {
-  section {
-    margin-bottom: 100px;
-  }
-
-  h1 {
-    line-height: 40px;
-    width: 100%;
-    font-size: 35px;
-  }
-
-  .intro-description {
-    width: 350px;
-    font-size: 18px;
-    line-height: 24px;
-    bottom: 30px;
-    left: 30px;
-  }
-
-  .about-description {
-    width: 100%;
-    font-size: 30px;
-    line-height: 40px;
-  }
 }
 
+
+/* эстетичное отображение заголовков, текста и изображений при промежуточных вариантах ширины экрана */
+  @media (max-width: 820px) {
+    h1 {
+      line-height: 50px;
+      width: 100%;
+      font-size: 40px;
+    }
+
+    .intro-backgroung-image-wrapper{
+      height: 350px;
+    }
+    .about-description {
+      width: 80%;
+      font-size: 28px;
+      line-height: 44px;
+  }
+  .project-location {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .details{
+      font-size: 18px;
+      line-height: 124px;
+  }
+  }
+  
+
+  /* для узких планшетов, портретного ориентирования или альбомного ориентирования на мобилках */
+
+  @media (max-width: 680px) {
+    section {
+      margin-bottom: 100px;
+    }
+
+    h1 {
+      line-height: 40px;
+      width: 100%;
+      font-size: 37px;
+    }
+    
+    .intro-backgroung-image-wrapper{
+      height: 310px;
+    }
+
+    .intro-description {
+      width: 350px;
+      font-size: 18px;
+      line-height: 24px;
+      bottom: 30px;
+      left: 30px;
+    }
+
+    .about-description {
+      width: 80%;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .about-btn-services {
+      width: 100%;
+      text-align: center;
+  
+    }
+
+    .project-location {
+      margin-bottom: 11px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .details{
+      font-size: 16px;
+      line-height: 22px;
+  }
+  }

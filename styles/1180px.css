@@ -1,23 +1,27 @@
-    main {
-        width: 100%;
-    }
+@media (max-width: 1180px) {
+  main {
+    width: 100%;
+  }
 
-    section {
-        width: 100%;
-        padding:0 15px;
-    }
+  section {
+    width: 100%;
+    padding: 0 15px;
+  }
 
-    .intro-backgroung-image-wrapper {
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 25%;
-    }
+  .intro-backgroung-image-wrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
+  }
 
-    .project-image {
-        width: 100%;
-    }
+  .project-image {
+    width: 100%;
+  }
 
-    .about-description {
-        width: 100%;
-    }
+  .about-description {
+    width: 90%;
+  }
+
+  
+}

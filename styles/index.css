@@ -1,12 +1,7 @@
-/* Общие для всех элементов свойства вынесены в тэг <body>. свойства font-weight, font-style не применял ввиду отсутствия необходимости, все свойства применились из подключенного шрифта. свойство box-sizing помещено в reset.css */
+/* Общие для всех элементов свойства вынесены в тэг <body>. свойства font-weight, font-style не применял ввиду отсутствия необходимости, все свойства применились из подключенного шрифта. свойства box-sizing и scroll-behavior помещено в reset.css */
 
 body {
-  /* margin: 0 auto;
-  width: 1400px;*/
-  min-width: 100%; 
-
-  /* max-width:100%; */
-
+  min-width: 100%;
   font-family: "Manrope", Courier, monospace;
   letter-spacing: -0.03em;
 }
@@ -35,6 +30,7 @@ h2 {
 }
 
 a {
+  display: block;
   text-decoration: none;
   cursor: pointer;
   color: #121212;
@@ -70,9 +66,7 @@ header {
   text-transform: uppercase;
 }
 
-/* продемонстрировал применение nth-last-child, т.к. это было требование к ДЗ, но также мог обойтись абсолютным позиционированием, расположением списка по правому краю родительского блока и отступом 60px(как в макете) слева каждого элемента списка, что на мой взгляд было проще и лаконичнее */
-
-ul li:nth-last-child(1) {
+.navLink:last-child {
   margin-right: 0px;
 }
 
@@ -91,7 +85,7 @@ main {
 section {
   margin: 0 auto 150px;
   padding: 0 15px;
-  max-width: 1180px;
+  width: 1180px;
 }
 
 h1 {
@@ -107,9 +101,7 @@ h1 {
 
 .intro-backgroung-image-wrapper {
   position: relative;
-  background-image: url(../images/intro-chair.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../images/intro-chair.png) center/cover no-repeat, rgba(12, 12, 12, 0.5);
   height: 500px;
 }
 
@@ -135,12 +127,12 @@ h1 {
 }
 
 .about-btn-services {
-  padding: 20px 40px;
   display: block;
   width: 255px;
   border-radius: 5px;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 67px;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
   background-color: #ad1818;
@@ -198,8 +190,8 @@ h1 {
   padding: 150px 0px;
 }
 
-.services-wrapper-center{
-  margin:0 auto;
+.services-wrapper-center {
+  margin: 0 auto;
   max-width: 1180px;
   padding: 0 15px;
 }
@@ -209,6 +201,7 @@ h1 {
 }
 
 .services-wrapper-flexbox {
+  margin-bottom: 106px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -216,16 +209,18 @@ h1 {
 }
 
 .service-wrapper-flex-item {
-  position:relative;
+  position: relative;
   width: calc(50% - 5px);
 }
 
-.service-image{
+.service-image {
   margin-bottom: 25px;
-  max-width:100%;
+  max-width: 100%;
+  height: 389px;
+  object-fit: cover;
 }
 
-.service-price-wrapper {
+.service-price {
   padding: 0 20px;
   position: absolute;
   top: 30px;
@@ -238,10 +233,20 @@ h1 {
 }
 
 .service-description {
-  
+
   font-size: 30px;
   line-height: 41px;
   color: #FFFFFF;
+}
+
+.order-service {
+  width: 100%;
+  font-size: 30px;
+  line-height: 153px;
+  text-align: center;
+  color: #ffffff;
+  background: #AD1818;
+  border-radius: 5px;
 }
 
 /* секция Example */
@@ -249,10 +254,10 @@ h1 {
 #example {
   min-width: 100%;
   height: 717px;
-  background: url(../images/example-bedroom.png);
-  background-repeat: no-repeat;
+  background: url(../images/example-bedroom.png) 40% cover/no-repeat;
+  /* background-repeat: no-repeat;
   background-position: 40%;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .example-text-wrapper {
