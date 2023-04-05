@@ -112,29 +112,17 @@
     font-size: 22px;
     line-height: 100px;
   }
-}
 
-.reviews {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  row-gap: 80px;
-}
+  .review-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
 
-.review {
-  width: 100%;
-}
-
-.review-title {
-  margin-bottom: 10px;
-  font-size: 25px;
-  line-height: 34px;
-}
-
-.review-text {
-  font-size: 16px;
-  line-height: 22px;
+  .review-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 /* По макету: Mobile M(IPhone SE) */
@@ -243,10 +231,10 @@
     border-radius: 3.80172px;
   }
 
-  .order-service{
-      font-size: 16px;
-      line-height: 51px;
-      border-radius: 3.80172px;
+  .order-service {
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
   }
 }
 
@@ -305,5 +293,5 @@
     padding: 0;
     font-size: 12px;
     line-height: 26px;
-}
+  }
 }

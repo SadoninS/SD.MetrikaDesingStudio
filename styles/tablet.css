@@ -77,17 +77,12 @@
   }
 
   .reviews {
-    margin-bottom: 80px;
     row-gap: 80px;
     column-gap:10px;
   }
 
   .review{
     width: calc(50% - 5px);
-  }
-
-  .review_wide {
-    width: 85%;
   }
 
   .review-title {
@@ -165,12 +160,17 @@
     font-size: 26px;
     line-height: 120px;
   }
+
   .reviews{
     row-gap: 80px;
   }
 
   .review{
     width: calc(50% - 5px);
+  }
+
+  .review-title {
+    font-size: 30px;
   }
  }
 
@@ -241,12 +241,17 @@
   }
 
   .reviews{
-    margin-bottom: 60px;
-    row-gap:60px;
     flex-direction: column;
   }
 
   .review{
     width: 100%;
   }
+
+  .review:last-child:nth-child(2n + 1) {
+    width: 100%;
+  }
+
+
+
 }
