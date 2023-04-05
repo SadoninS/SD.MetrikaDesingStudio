@@ -242,6 +242,12 @@
     line-height: 51px;
     border-radius: 3.80172px;
   }
+
+  .order-service{
+      font-size: 16px;
+      line-height: 51px;
+      border-radius: 3.80172px;
+  }
 }
 
 /* внешний дисплей Sumsung Fold*/
