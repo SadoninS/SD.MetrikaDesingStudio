@@ -78,14 +78,12 @@
 
   .reviews {
     margin-bottom: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 10px;
+    row-gap: 80px;
+    column-gap:10px;
   }
 
-  .review {
-    width: 459px;
+  .review{
+    width: calc(50% - 5px);
   }
 
   .review_wide {
@@ -168,13 +166,13 @@
     line-height: 120px;
   }
   .reviews{
-    gap: 40px;
+    row-gap: 80px;
   }
 
-  .review_wide {
-    width: 85%;
+  .review{
+    width: calc(50% - 5px);
   }
-}
+ }
 
 /* для узких планшетов, портретного ориентирования или альбомного ориентирования на мобилках */
 @media (max-width: 680px) {

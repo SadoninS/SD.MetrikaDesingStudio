@@ -248,14 +248,16 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 50px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap:50px;
 }
 
 .review {
-  width: 528px;
+  width: calc(50% - 25px);;
 }
 
-.review_wide {
+.review:last-child:nth-child(2n + 1) {
   width: 85%;
 }
 
