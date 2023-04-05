@@ -298,4 +298,12 @@
     line-height: 51px;
     border-radius: 3.80172px;
   }
+
+  .service-price {
+    top: 12px;
+    left: 12px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 26px;
+}
 }
