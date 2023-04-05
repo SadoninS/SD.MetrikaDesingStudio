@@ -236,6 +236,11 @@ h1 {
   border-radius: 5px;
 }
 
+.order-service:hover{
+  color:#AD1818 ;
+  background: #ffffff;
+}
+
 /* Секция Reviews */
 
 .reviews {

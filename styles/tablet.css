@@ -244,4 +244,8 @@
     row-gap:60px;
     flex-direction: column;
   }
+
+  .review{
+    width: 100%;
+  }
 }
