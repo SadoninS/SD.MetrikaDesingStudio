@@ -77,7 +77,7 @@
   }
 
   .reviews {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -237,5 +237,11 @@
 
   .service-image {
     height: 250px;
+  }
+
+  .reviews{
+    margin-bottom: 60px;
+    row-gap:60px;
+    flex-direction: column;
   }
 }
