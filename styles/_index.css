@@ -1,14 +1,10 @@
-/* Общие для всех элементов свойства вынесены в тэг <body>. свойства font-weight, font-style не применял ввиду отсутствия необходимости, все свойства применились из подключенного шрифта. свойства box-sizing и scroll-behavior помещено в reset.css */
-
 body {
-  min-width: 100%;
   font-family: "Manrope", Courier, monospace;
-  letter-spacing: -0.03em;
 }
 
-/* по списку типовых ошибок ясно, что достаточно вынести свойство letter-spacing в общий тэг, но, из-за особенностей наследования, для проверки PixelPerfect потребовалось применить его повторно к следующим элементам. там где нет нобходимости свойство не применялось. */
-
+a,
 h1,
+h2,
 .intro-description,
 .about-description,
 .about-btn-services,
@@ -16,11 +12,11 @@ h1,
 .showAllProjects,
 .service-description,
 .email,
-.copyright {
+.copyright,
+.review-title,
+.review-text {
   letter-spacing: -0.03em;
 }
-
-/* далее следует группа элементов, имеющие общие свойства */
 
 h2 {
   margin-bottom: 30px;
@@ -30,15 +26,12 @@ h2 {
 }
 
 a {
-  display: block;
   text-decoration: none;
   cursor: pointer;
   color: #121212;
 }
 
-/* далее свойства сгруппированы по секциям */
-
-/* секция Header */
+/* Блок Header */
 
 header {
   margin: 0 auto;
@@ -136,7 +129,6 @@ h1 {
   text-decoration: none;
   color: #ffffff;
   background-color: #ad1818;
-
 }
 
 /* секция Projects */
@@ -165,7 +157,6 @@ h1 {
 }
 
 .showAllProjects {
-  display: block;
   text-decoration: none;
   font-size: 30px;
   line-height: 153px;
@@ -174,8 +165,6 @@ h1 {
   border: 1px solid #ad1818;
   border-radius: 5px;
 }
-
-/* при наведении меняется стиль кнопки-ссылки */
 
 .showAllProjects:hover {
   color: #ffffff;
@@ -233,14 +222,12 @@ h1 {
 }
 
 .service-description {
-
   font-size: 30px;
   line-height: 41px;
   color: #FFFFFF;
 }
 
 .order-service {
-  width: 100%;
   font-size: 30px;
   line-height: 153px;
   text-align: center;
@@ -249,22 +236,47 @@ h1 {
   border-radius: 5px;
 }
 
+/* Секция Reviews */
+
+.reviews {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.review {
+  width: 528px;
+}
+
+.review_wide {
+  width: 831px;
+}
+
+.review-title {
+  margin-bottom: 14px;
+  font-size: 45px;
+  line-height: 61px;
+}
+
+.review-text {
+  font-size: 22px;
+  line-height: 30px;
+}
+
 /* секция Example */
 
 #example {
   min-width: 100%;
   height: 717px;
   background: url(../images/example-bedroom.png) 40% cover/no-repeat;
-  /* background-repeat: no-repeat;
-  background-position: 40%;
-  background-size: cover; */
 }
 
 .example-text-wrapper {
   margin: 0 auto;
   width: 1150px;
   position: relative;
-
 }
 
 .example-p {
@@ -293,9 +305,8 @@ h1 {
   height: 217px;
 }
 
-.contacts-h2::before {
+#contacts h2::before {
   margin-bottom: 13px;
-  display: block;
   content: '';
   height: 24px;
   width: 24px;
@@ -306,8 +317,6 @@ h1 {
 
 }
 
-/* добиваться полного соответствия объекта с классом tel с макетом по pixelPerfect не стал, т.к. смысловую нагрузку это не несет */
-
 .tel {
   margin-bottom: 30px;
   display: block;
@@ -317,16 +326,12 @@ h1 {
   color: #121212;
 }
 
-/* по макету не ясно, должно ли быль подчеркивание email без наведения курсор или нет, поэтому решил сделать с подчеркиванием, т.к. по логике это ссылка. */
-
 .email {
   font-size: 60px;
   line-height: 60px;
   color: #121212;
   border-bottom: 2px solid #121212;
 }
-
-/* при наведении меняется  прозрачность текста и подчеркивания */
 
 .email:hover {
   border-bottom: 2px solid rgba(18, 18, 18, 0.5);
@@ -348,8 +353,6 @@ footer {
   width: 450px;
   height: 230px;
 }
-
-/* применил flexbox для разнообразия */
 
 .footerLinks {
   position: absolute;

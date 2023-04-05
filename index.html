@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles/reset.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-  <link rel="stylesheet" media="screen and (max-width: 1180px)" href="styles/1180px.css">
+  <link rel="stylesheet" href="styles/_reset.css" />
+  <link rel="stylesheet" href="styles/_index.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1180px)" href="styles/desktop.css">
   <link rel="stylesheet" media="screen and (max-width: 960px)" href="styles/tablet.css">
   <link rel="stylesheet" media="screen and (max-width: 460px)" href="styles/mobile.css">
 
@@ -109,35 +109,33 @@
       <a href="#projects" class="showAllProjects">Смотреть все проекты</a>
     </section>
 
-    <!-- <section id="services">
+    <section id="services">
       <div class="services-wrapper-center">
-        <h2 id="servicesAnchor">Услуги</h2>
+        <h2 id="servicesAnchor">услуги</h2>
         <ul class="services-wrapper-flexbox">
           <li class="service-wrapper-flex-item">
             <picture>
-              <source>
-              <source>
+              <source media="(max-width:460px)" srcset="images/mobile/services/planning-solution.png" type="image/png">
+              <source media="(max-width:960px)" srcset="images/tablet/services/planning-solution.png" type="image/png">
               <img class="service-image" src="images/desktop/services/planning-solution.png"
-                alt="планировачные решения">
+                alt="планировочные решения">
             </picture>
             <p class="service-description">Планировочные решения</p>
             <p class="service-price">от 2500₽/м²</p>
           </li>
           <li class="service-wrapper-flex-item">
             <picture>
-              <source>
-              <source>
-              <source>
-              <img class="service-image" src="images/desktop/services/design-project.png" alt="планировочные решения">
+              <source media="(max-width:460px)" srcset="images/mobile/services/design-project.png" type="image/png">
+              <source media="(max-width:960px)" srcset="images/tablet/services/design-project.png" type="image/png">
+              <img class="service-image" src="images/desktop/services/design-project.png" alt="Дизайн проект">
             </picture>
             <p class="service-description">Дизайн проект</p>
             <p class="service-price">от 3000₽/м²</p>
           </li>
           <li class="service-wrapper-flex-item">
             <picture>
-              <source>
-              <source>
-              <source>
+              <source media="(max-width:460px)" srcset="images/mobile/services/author-supervision.png" type="image/png">
+              <source media="(max-width:960px)" srcset="images/tablet/services/author-supervision.png" type="image/png">
               <img class="service-image" src="images/desktop/services/author-supervision.png" alt="Авторский надзор">
             </picture>
             <p class="service-description">Авторский надзор</p>
@@ -145,9 +143,8 @@
           </li>
           <li class="service-wrapper-flex-item">
             <picture>
-              <source>
-              <source>
-              <source>
+              <source media="(max-width:460px)" srcset="images/mobile/services/equipment.png" type="image/png">
+              <source media="(max-width:960px)" srcset="images/tablet/services/equipment.png" type="image/png">
               <img class="service-image" src="images/desktop/services/equipment.png" alt="Комплектация">
             </picture>
             <p class="service-description">Комплектация</p>
@@ -156,28 +153,68 @@
         </ul>
         <a href="#" class="order-service">Заказать услугу</a>
       </div>
-      
-    </section> -->
 
-    <!-- 
-    <section id="example">
+    </section>
+
+    <section id="reviews">
+      <h2>отзывы</h2>
+      <div class="reviews">
+        <div class="review">
+          <p class="review-title">Ксения, проект 65 кв.м.</p>
+          <p class="review-text">Хочу искренне поблагодарить Вас за работу, проделанную на высоком уровне! Нам с мужем
+            было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать пожелания своих клиентов и
+            выполнять работу, которая превосходит все ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам
+            грамотно разместить все, что мы хотим и даже больше!
+            <br><br>
+            Вам удалось это просто превосходно! Нам лишь осталось воплотить красоту, которую Вы нам создали в жизнь и
+            поделиться с Вами результатом!
+          </p>
+        </div>
+        <div class="review">
+          <p class="review-title">Регина, проект 89 кв.м.</p>
+          <p class="review-text">Спасибо большое за такой классный проект! Все стильно, круто, продумано! Очень приятно
+            было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в поисках идеального для нас ремонта.
+            Здорово, что мы нашли такого основательного, ответственного и внимательного к деталям дизайнера!
+            <br><br>
+            Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем
+            рекомендовать Вас всем друзьям и знакомым!
+          </p>
+        </div>
+      </div>
+      <div class="review review_wide">
+        <p class="review-title">Яна, проект 120 кв.м.</p>
+        <p class="review-text">Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила
+          разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество
+          выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько
+          вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим.
+          <br> <br>
+          В итоге проект был сдан в оговоренный срок, и мне просто не терпится приступить к его реализации! Проект
+          получился очень стильным и современным! Буду рекомендовать Вас тем, кому еще предстоит это непростое дело -
+          ремонт!
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- <section id="example">
       <div class="example-text-wrapper">
         <p class="example-p">
           Проект двухкомнатной квартиры в ЖК Лесной Пейзаж
         </p>
       </div>
-    </section>
+    </section> -->
 
-    <section id="contacts">
+    <!-- <section id="contacts">
       <div class="contacts-wrapper">
-        <h2 class="contacts-h2">Контакты</h2>
+        <h2>Контакты</h2>
         <a href="tel:+79358954535" class="tel">+7 935 895-45-35</a>
         <a href="mailto:hello@mail.com" class="email">hello@mail.com</a>
       </div>
     </section> -->
-  </main>
+  </main> 
 
-  <!-- <footer>
+    <!-- <footer>
     <div class="footer-wrapper">
       <ul class="footerLinks">
         <li>

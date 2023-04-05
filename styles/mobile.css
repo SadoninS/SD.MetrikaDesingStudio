@@ -1,6 +1,5 @@
-/* для широких смартфонов:Mobile L */
+/* для широких смартфонов: Mobile L */
 @media (max-width: 460px) {
-
   section {
     margin-bottom: 80px;
     padding: 0 13px;
@@ -31,7 +30,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 19px;
-}
+  }
 
   .about-description {
     width: 100%;
@@ -40,9 +39,18 @@
   }
 
   .about-btn-services {
+    margin: 0;
     font-size: 16px;
     line-height: 51px;
     border-radius: 3.80172px;
+  }
+
+  .project {
+    margin-bottom: 49px;
+  }
+
+  .project:last-child {
+    margin-bottom: 60px;
   }
 
   .project-location {
@@ -56,32 +64,87 @@
     line-height: 20px;
   }
 
-
   .showAllProjects {
+    margin: 0;
     font-size: 22px;
     line-height: 100px;
     border-radius: 3.80172px;
   }
 
+  #services {
+    padding: 80px 0px;
+  }
+
+  .services-wrapper-center {
+    padding: 0px 13px;
+  }
+
+  .services-wrapper-flexbox {
+    row-gap: 60px;
+    flex-direction: column;
+  }
+
+  .service-wrapper-flex-item {
+    width: 100%;
+  }
+
+  .service-image {
+    margin-bottom: 10px;
+    width: 434px;
+    height: 100%;
+  }
+
+  .service-description {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .service-price {
+    top: 24px;
+    left: 24px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .order-service {
+    margin: 0;
+    font-size: 22px;
+    line-height: 100px;
+  }
 }
 
-/* По макету:Mobile M(IPhone SE) */
+.reviews {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+.review {
+  width: 100%;
+}
+
+.review-title {
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* По макету: Mobile M(IPhone SE) */
 
 @media (max-width: 376px) {
-section{
-  padding: 0px 17px 0 13px;
-}
   h1 {
     margin-bottom: 25px;
     width: 95%;
     font-size: 30px;
     line-height: 32px;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 19px;
   }
 
   .intro-description {
@@ -91,7 +154,6 @@ section{
     font-size: 16px;
     line-height: 22px;
   }
-
 
   .about-btn-services {
     font-size: 16px;
@@ -122,15 +184,17 @@ section{
     font-size: 16px;
     line-height: 22px;
   }
+
+  .showAllProjects {
+    border: 0.760343px solid #AD1818;
+  }
 }
 
-
-/* для узких смартфонов:Mobile S*/
+/* для узких смартфонов: Mobile S*/
 @media (max-width: 320px) {
-
   section {
     margin-bottom: 40px;
-    padding:0 10px;
+    padding: 0 10px;
   }
 
   h1 {
@@ -173,18 +237,15 @@ section{
     line-height: 12px;
   }
 
-
   .showAllProjects {
     font-size: 16px;
     line-height: 51px;
     border-radius: 3.80172px;
   }
-
 }
 
-/* внешний дисплей (Sumsung Fold)*/
+/* внешний дисплей Sumsung Fold*/
 @media (max-width: 280px) {
-
   h1 {
     margin-bottom: 5px;
     width: 100%;
@@ -225,12 +286,10 @@ section{
     line-height: 12px;
   }
 
-
   .showAllProjects {
     padding: 0;
     font-size: 14px;
     line-height: 51px;
     border-radius: 3.80172px;
   }
-
 }

@@ -1,3 +1,4 @@
+/* для старых мониторов с соотношением сторон 4:3(XGA, SVGA, VGA и подобных)  */
 @media (max-width: 1180px) {
   main {
     width: 100%;
@@ -23,5 +24,7 @@
     width: 90%;
   }
 
-  
+  .order-service {
+    margin: 0 15px;
+  }
 }
