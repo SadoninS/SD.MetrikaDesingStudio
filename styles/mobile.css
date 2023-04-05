@@ -79,12 +79,12 @@
     padding: 0px 13px;
   }
 
-  .services-wrapper-flexbox {
+  .services {
     row-gap: 60px;
     flex-direction: column;
   }
 
-  .service-wrapper-flex-item {
+  .service {
     width: 100%;
   }
 

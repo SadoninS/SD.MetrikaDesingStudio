@@ -56,7 +56,7 @@
     padding: 150px 0 120px 0;
   }
 
-  .services-wrapper-flexbox {
+  .services {
     margin-bottom: 80px;
     row-gap: 80px;
   }
@@ -78,10 +78,10 @@
 
   .reviews {
     row-gap: 80px;
-    column-gap:10px;
+    column-gap: 10px;
   }
 
-  .review{
+  .review {
     width: calc(50% - 5px);
   }
 
@@ -136,13 +136,9 @@
     padding: 100px 0px;
   }
 
-  .services-wrapper-flexbox {
+  .services {
     margin-bottom: 70px;
     row-gap: 70px;
-  }
-
-  .service-image {
-    height: 300px;
   }
 
   .service-description {
@@ -161,18 +157,18 @@
     line-height: 120px;
   }
 
-  .reviews{
+  .reviews {
     row-gap: 80px;
   }
 
-  .review{
+  .review {
     width: calc(50% - 5px);
   }
 
   .review-title {
     font-size: 30px;
   }
- }
+}
 
 /* для узких планшетов, портретного ориентирования или альбомного ориентирования на мобилках */
 @media (max-width: 680px) {
@@ -227,24 +223,31 @@
     padding: 75px 0px;
   }
 
-  .services-wrapper-flexbox {
+  .services {
     margin-bottom: 60px;
     row-gap: 60px;
+    flex-direction: column;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service-image {
+    width: 100%;
   }
 
   .order-service {
     line-height: 100px;
   }
 
-  .service-image {
-    height: 250px;
-  }
 
-  .reviews{
+
+  .reviews {
     flex-direction: column;
   }
 
-  .review{
+  .review {
     width: 100%;
   }
 

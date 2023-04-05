@@ -189,7 +189,7 @@ h1 {
   color: #ffffff;
 }
 
-.services-wrapper-flexbox {
+.services {
   margin-bottom: 106px;
   display: flex;
   justify-content: space-between;
@@ -197,7 +197,7 @@ h1 {
   row-gap: 85px;
 }
 
-.service-wrapper-flex-item {
+.service {
   position: relative;
   width: calc(50% - 5px);
 }
