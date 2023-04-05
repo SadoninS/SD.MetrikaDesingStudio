@@ -167,6 +167,9 @@
     font-size: 26px;
     line-height: 120px;
   }
+  .reviews{
+    gap: 40px;
+  }
 
   .review_wide {
     width: 85%;
