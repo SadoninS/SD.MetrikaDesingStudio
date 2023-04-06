@@ -248,7 +248,7 @@ h1 {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 50px;
+  row-gap: 80px;
   column-gap:50px;
 }
 
