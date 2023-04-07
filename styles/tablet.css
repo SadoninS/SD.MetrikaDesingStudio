@@ -33,13 +33,17 @@
     line-height: 48px;
   }
 
+  #projects{
+    margin-bottom:100px;
+  }
+
   .project {
     margin-bottom: 80px;
     height: 100%;
   }
 
   .project:last-child {
-    margin-bottom: 102px;
+    margin-bottom: 100px;
   }
 
   .project-image {
@@ -62,6 +66,7 @@
   }
 
   .service-image {
+    margin-bottom:15px;
     height: 315px;
   }
 
@@ -234,6 +239,7 @@
   }
 
   .service-image {
+    height: 100%;
     width: 100%;
   }
 

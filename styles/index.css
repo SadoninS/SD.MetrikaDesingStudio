@@ -190,11 +190,11 @@ h1 {
 }
 
 .services {
-  margin-bottom: 106px;
+  margin-bottom: 104px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 85px;
+  row-gap: 75px;
 }
 
 .service {
@@ -257,7 +257,7 @@ h1 {
 }
 
 .review:last-child:nth-child(2n + 1) {
-  width: 85%;
+  width: 75%;
 }
 
 .review-title {
