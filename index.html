@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial scale 1.0">
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="styles/reset.css" />
   <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/gallery.css" />
+  <link rel="stylesheet" href="styles/contacts.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
   <link rel="stylesheet" media="screen and (max-width: 1180px)" href="styles/desktop.css">
   <link rel="stylesheet" media="screen and (max-width: 960px)" href="styles/tablet.css">
   <link rel="stylesheet" media="screen and (max-width: 460px)" href="styles/mobile.css">
@@ -24,17 +25,20 @@
     <a href="https://sadonins.github.io/SD.MetrikaDesingStudio/">
       <img class="logo" src="images/metrika-logo.png" alt="логотип студии метрика" />
     </a>
-    <ul class="navLinks">
-      <li class="navLink">
+    <ul class="navLinks" role="menu">
+      <li class="navLink" role="menuitem">
         <a href="#about">О нас</a>
       </li>
-      <li class="navLink">
-        <a href="#projects">Проекты</a>
+      <li class="navLink" role="menuitem">
+        <a href="#projects" >Проекты</a>
       </li>
-      <li class="navLink">
+      <li class="navLink" role="menuitem">
         <a href="#servicesAnchor">Услуги</a>
       </li>
-      <li class="navLink">
+      <li class="navLink" role="menuitem">
+        <a href="#gallery">Галерея проектов</a>
+      </li>
+      <li class="navLink" role="menuitem">
         <a href="#contacts">Контакты</a>
       </li>
     </ul>
@@ -110,7 +114,7 @@
     </section>
 
     <section id="services">
-      <div class="services-wrapper-center">
+      <div class="services-container">
         <h2 id="servicesAnchor">услуги</h2>
         <ul class="services">
           <li class="service">
@@ -193,47 +197,68 @@
           </p>
         </li>
       </ul>
-      
-
     </section>
 
+    <section id="gallery">
+          <div class="gallery-container">
+            <h2>галерея проектов</h2>
+            <div class="gallery-controls">
+              <button class="gallery-control-prev"></button>
+              <button class="gallery-control-next"></button>
+            </div>
+            
+          </div>
+          <div class="gallery-slides">
+            <div class="gallery-slide gallery-slide-active">
+              <img class="gallery-image" src="images/gallery/bedroom.png" alt="фотография проекта спальни">
+              <div class="gallery-container">
+                <p>Проект  Двухкомнтаной <br> квартиры в ЖК Лесной Пейзаж</p>
+              </div>
+            </div>
+            <div class="gallery-slide">
+              <img class="gallery-image" src="images/gallery/yellow-chair.png" alt="фотография проекта прихожей">
+              <div class="gallery-container">
+                <p>Проект гостиной в ЖК Маяк</p>
+              </div>
+            </div>
+            <div class="gallery-slide">
+              <img class="gallery-image" src="images/gallery/living-room.png" alt="фотография проекта гостиной">
+              <div class="gallery-container">
+                <p>Визуализация кухни-гостиной <br> в частном доме</p>
+              </div>
+            </div>
+            <div class="gallery-slide">
+              <img class="gallery-image" src="images/gallery/kitchen.png" alt="фотография проекта кухни">
+              <div class="gallery-container">
+                <p>Проект кухни в скандинавском <br> стиле для ЖК Северный Ветер</p>
+              </div>
+            </div>
+          </div>
+    </section>
 
-    <!-- <section id="example">
-      <div class="example-text-wrapper">
-        <p class="example-p">
-          Проект двухкомнатной квартиры в ЖК Лесной Пейзаж
-        </p>
-      </div>
-    </section> -->
-
-    <!-- <section id="contacts">
-      <div class="contacts-wrapper">
+    <section id="contacts">
         <h2>Контакты</h2>
-        <a href="tel:+79358954535" class="tel">+7 935 895-45-35</a>
-        <a href="mailto:hello@mail.com" class="email">hello@mail.com</a>
-      </div>
-    </section> -->
-  </main> 
+        <ul class="contacts">
+          <li><a href="tel:+79358954535" class="tel">+7 935 895-45-35</a></li>
+          <li><a target="_blank" href="https://t.me/StanislavSadonin" class="email">SadoninSV</a></li>
+        </div>
+    </section>
+  </main>
 
-    <!-- <footer>
+  <footer>
     <div class="footer-wrapper">
-      <ul class="footerLinks">
-        <li>
+      <nav class="footerLinks">
           <a class="footerLink" href="#about">О нас</a>
-        </li>
-        <li>
           <a class="footerLink" href="#projects">Проекты</a>
-        </li>
-        <li>
           <a class="footerLink" href="#servicesAnchor">Услуги</a>
-        </li>
-        <li>
-          <a class="footerLink" href="#contacts">Контакты</a>
-        </li>
-      </ul>
+          <a class="footerLink" href="#contacts">Галерея</a>
+          <a class="footerLink" href="#gallery">Контакты</a>
+      </nav>
       <p class="copyright">cтудия дизайна интерьера Метрика — 2023</p>
     </div>
-  </footer> -->
+  </footer>
+
+  <script src="gallery.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,147 @@
+#gallery {
+    position: relative;
+    width: 100%;
+    height: 717px;
+    padding: 0;
+    background: rgba(12, 12, 12, 0.5);
+}
+
+#gallery h2 {
+    position: absolute;
+    top: 67px;
+    z-index: 1;
+    color: #ffffff;
+}
+
+
+.gallery-container {
+    margin: 0 auto;
+    width: 1180px;
+    padding: 0 15px;
+}
+
+.gallery-slides {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.gallery-slide {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-slide-active {
+    opacity: 1;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-controls {
+    position: absolute;
+    bottom: 160px;
+    display: flex;
+    column-gap: 14px;
+    z-index: 2;
+}
+
+.gallery-control-prev,
+.gallery-control-next {
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/gallery/gallery-control-btn.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.gallery-control-next {
+    background-image: url(../images/gallery/gallery-control-btn.png);
+    transform: rotate(180deg);
+}
+
+.gallery-control-prev:hover,
+.gallery-control-next:hover {
+    opacity: 0.5;
+}
+
+.gallery-container p {
+    z-index: 1;
+    position: absolute;
+    bottom: 60px;
+    font-size: 30px;
+    line-height: 41px;
+    color: #ffffff;
+}
+
+@media (max-width: 1180px) {
+    .gallery-container {
+        width: 100%;
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 960px) {
+
+    #gallery {
+        height: 536px;
+    }
+
+    #gallery h2 {
+        top: 80px;
+        line-height: 27px;
+        font-size: 20px;
+    }
+
+    .gallery-container p {
+        font-size: 25px;
+        line-height: 34px;
+        bottom: 80px;
+    }
+
+    .gallery-controls {
+        bottom: 150px;
+    }
+
+
+}
+
+@media (max-width: 460px) {
+
+    .gallery-container {
+        padding: 0 15px;
+    }
+
+    #gallery {
+        height: 408px;
+    }
+
+    #gallery h2 {
+        top: 60px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .gallery-container p {
+        font-size: 19px;
+        line-height: 26px;
+        bottom: 60px;
+    }
+
+    .gallery-controls {
+        justify-content: space-between;
+        width: calc(100% - 30px);
+        bottom: calc(50% - 20px);
+    }
+}
