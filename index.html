@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles/gallery.css" />
   <link rel="stylesheet" href="styles/contacts.css" />
   <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/popup.css" />
   <link rel="stylesheet" media="screen and (max-width: 1180px)" href="styles/desktop.css">
   <link rel="stylesheet" media="screen and (max-width: 960px)" href="styles/tablet.css">
   <link rel="stylesheet" media="screen and (max-width: 460px)" href="styles/mobile.css">
@@ -20,7 +21,7 @@
   <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
-<body>
+<body class="body-fixed">
   <!-- <header class="header">
     <a href="https://sadonins.github.io/SD.MetrikaDesingStudio/">
       <img class="logo" src="images/metrika-logo.png" alt="логотип студии метрика" />
@@ -155,8 +156,26 @@
             <p class="service-price">5% от стоимости</p>
           </li>
         </ul>
-        <a href="#" class="order-service">Заказать услугу</a>
+        <a class="js-btn order-service">Заказать услугу</a>
       </div>
+
+      <div class="js-popup popup popup-open">
+        <div class="js-popup-content popup-content">
+          <button class="js-popup-close-btn pupup-close-btn"></button>
+          <div class="popup-title">Заказать услугу</div>
+          <div class="popup-text">
+            <p>Заполните форму, мы свяжемся с вами в течение суток</p>
+          </div>
+          <div class="popup-input-wrapper">
+            <input class="popup-input" type="text" placeholder="Имя">
+            <input class="popup-input" type="text" placeholder="Электронная почта">
+            <input class="popup-input" type="text" placeholder="Номер телефона">
+          </div>
+          <button class="js-btn popup-submit-btn">Отправить</button>
+        </div>
+      </div>
+
+
 
     </section>
 
@@ -200,47 +219,47 @@
     </section>
 
     <section id="gallery">
+      <div class="gallery-container">
+        <h2>галерея проектов</h2>
+        <div class="gallery-controls">
+          <button class="gallery-control-prev"></button>
+          <button class="gallery-control-next"></button>
+        </div>
+
+      </div>
+      <div class="gallery-slides">
+        <div class="gallery-slide gallery-slide-active">
+          <img class="gallery-image" src="images/gallery/bedroom.png" alt="фотография проекта спальни">
           <div class="gallery-container">
-            <h2>галерея проектов</h2>
-            <div class="gallery-controls">
-              <button class="gallery-control-prev"></button>
-              <button class="gallery-control-next"></button>
-            </div>
-            
+            <p>Проект Двухкомнтаной <br> квартиры в ЖК Лесной Пейзаж</p>
           </div>
-          <div class="gallery-slides">
-            <div class="gallery-slide gallery-slide-active">
-              <img class="gallery-image" src="images/gallery/bedroom.png" alt="фотография проекта спальни">
-              <div class="gallery-container">
-                <p>Проект  Двухкомнтаной <br> квартиры в ЖК Лесной Пейзаж</p>
-              </div>
-            </div>
-            <div class="gallery-slide">
-              <img class="gallery-image" src="images/gallery/yellow-chair.png" alt="фотография проекта прихожей">
-              <div class="gallery-container">
-                <p>Проект гостиной в ЖК Маяк</p>
-              </div>
-            </div>
-            <div class="gallery-slide">
-              <img class="gallery-image" src="images/gallery/living-room.png" alt="фотография проекта гостиной">
-              <div class="gallery-container">
-                <p>Визуализация кухни-гостиной <br> в частном доме</p>
-              </div>
-            </div>
-            <div class="gallery-slide">
-              <img class="gallery-image" src="images/gallery/kitchen.png" alt="фотография проекта кухни">
-              <div class="gallery-container">
-                <p>Проект кухни в скандинавском <br> стиле для ЖК Северный Ветер</p>
-              </div>
-            </div>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-image" src="images/gallery/yellow-chair.png" alt="фотография проекта прихожей">
+          <div class="gallery-container">
+            <p>Проект гостиной в ЖК Маяк</p>
           </div>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-image" src="images/gallery/living-room.png" alt="фотография проекта гостиной">
+          <div class="gallery-container">
+            <p>Визуализация кухни-гостиной <br> в частном доме</p>
+          </div>
+        </div>
+        <div class="gallery-slide">
+          <img class="gallery-image" src="images/gallery/kitchen.png" alt="фотография проекта кухни">
+          <div class="gallery-container">
+            <p>Проект кухни в скандинавском <br> стиле для ЖК Северный Ветер</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contacts">
-        <h2>Контакты</h2>
-        <ul class="contacts">
-          <li><a href="tel:+79358954535" class="tel">+7 935 895-45-35</a></li>
-          <li><a target="_blank" href="https://t.me/StanislavSadonin" class="email">SadoninSV</a></li>
+      <h2>Контакты</h2>
+      <ul class="contacts">
+        <li><a href="tel:+79358954535" class="tel">+7 935 895-45-35</a></li>
+        <li><a target="_blank" href="https://t.me/StanislavSadonin" class="email">SadoninSV</a></li>
         </div>
     </section>
   </main>
@@ -248,17 +267,18 @@
   <footer>
     <div class="footer-wrapper">
       <nav class="footerLinks">
-          <a class="footerLink" href="#about">О нас</a>
-          <a class="footerLink" href="#projects">Проекты</a>
-          <a class="footerLink" href="#servicesAnchor">Услуги</a>
-          <a class="footerLink" href="#contacts">Галерея</a>
-          <a class="footerLink" href="#gallery">Контакты</a>
+        <a class="footerLink" href="#about">О нас</a>
+        <a class="footerLink" href="#projects">Проекты</a>
+        <a class="footerLink" href="#servicesAnchor">Услуги</a>
+        <a class="footerLink" href="#contacts">Галерея</a>
+        <a class="footerLink" href="#gallery">Контакты</a>
       </nav>
       <p class="copyright">cтудия дизайна интерьера Метрика — 2023</p>
     </div>
   </footer>
 
-  <script src="gallery.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
