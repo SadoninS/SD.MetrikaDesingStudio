@@ -1,8 +1,11 @@
-/* @import url(gallery.css); */
-/* @import url(contacts.css); */
-
-body {
+body,
+button,
+input {
   font-family: "Manrope", Courier, monospace;
+}
+
+.body-fixed,.body-fixed-2 {
+  overflow: hidden;
 }
 
 a,
@@ -21,6 +24,14 @@ h2,
   letter-spacing: -0.03em;
 }
 
+h1 {
+  margin-bottom: 30px;
+  width: 956px;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+}
+
 h2 {
   margin-bottom: 30px;
   font-size: 18px;
@@ -34,9 +45,18 @@ a {
   color: #121212;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: block;
+}
+
 /* Блок Header */
 
-header {
+/* header {
   margin: 0 auto;
   position: relative;
   width: 1150px;
@@ -70,7 +90,7 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding-bottom: 1px;
   opacity: 0.5;
-}
+} */
 
 /* Блок Main */
 
@@ -84,13 +104,7 @@ section {
   width: 1180px;
 }
 
-h1 {
-  margin-bottom: 30px;
-  width: 956px;
-  font-size: 60px;
-  line-height: 60px;
-  color: #121212;
-}
+
 
 /* секция intro */
 
@@ -231,6 +245,7 @@ h1 {
 }
 
 .order-service {
+  width: 100%;
   font-size: 30px;
   line-height: 153px;
   text-align: center;

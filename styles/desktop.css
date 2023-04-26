@@ -9,6 +9,10 @@
     padding: 0 15px;
   }
 
+  h1{
+    width: 931px;
+  }
+
   .intro-backgroung-image-wrapper {
     width: 100%;
     background-repeat: no-repeat;
@@ -24,7 +28,5 @@
     width: 90%;
   }
 
-  .order-service {
-    margin: 0 15px;
-  }
+ 
 }

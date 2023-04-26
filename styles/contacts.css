@@ -13,10 +13,13 @@
   content: '';
   height: 24px;
   width: 24px;
-  background-image: url('../images/contacts/mob-ico.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
+}
+
+.tel:before{
+  background-image: url('../images/contacts/mob-ico.png');
 }
 
 .email:before {
