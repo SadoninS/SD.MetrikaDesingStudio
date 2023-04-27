@@ -49,3 +49,10 @@ section {
     margin-bottom: 100px;
   }
 }
+
+@media (max-width: 460px) {
+  section {
+    margin-bottom: 80px;
+  }
+}
+

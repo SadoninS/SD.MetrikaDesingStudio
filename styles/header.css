@@ -127,7 +127,7 @@ header {
 }
 
 .burger-contact-email:after {
-  background-image: url(../images/contacts/tg-ico2.png);
+  background-image: url(../images/contacts/tg-ico.png);
 }
 
 @media (max-width: 1180px) {

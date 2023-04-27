@@ -1,4 +1,5 @@
 .contacts {
+  height: 120px;
   display: flex;
   gap: 100px;
 }
@@ -19,7 +20,7 @@
 }
 
 .email:before {
-  background-image: url('../images/contacts/tg-ico2.png');
+  background-image: url('../images/contacts/tg-ico.png');
 }
 
 .tel {
@@ -69,12 +70,14 @@
 
 @media (max-width: 680px) {
   .contacts {
+    height: 235px;
     flex-direction: column;
     row-gap: 25px;
   }
 
   .tel,
   .email {
+    height: 105px;
     font-size: 35px;
   }
 
@@ -88,6 +91,7 @@
 
   .tel,
   .email {
+    height: 90px;
     font-size: 35px;
     line-height: 46px;
   }

@@ -23,12 +23,7 @@
 }
 
 @media (max-width: 960px) {
-    #projects {
-        margin-bottom: 100px;
-    }
-
     .project {
-        margin-bottom: 80px;
         height: 100%;
     }
 
