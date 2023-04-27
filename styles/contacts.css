@@ -4,10 +4,10 @@
   gap: 100px;
 }
 
-.tel:before,
-.email:before {
+.tel-item:before,
+.email-item:before {
   margin-bottom: 27px;
-  content: '';
+  content: "";
   height: 24px;
   width: 24px;
   background-repeat: no-repeat;
@@ -15,11 +15,11 @@
   background-position: left;
 }
 
-.tel:before {
+.tel-item:before {
   background-image: url('../images/contacts/mob-ico.png');
 }
 
-.email:before {
+.email-item:before {
   background-image: url('../images/contacts/tg-ico.png');
 }
 
