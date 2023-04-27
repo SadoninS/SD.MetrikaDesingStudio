@@ -127,7 +127,7 @@
 
 /* По макету: Mobile M(IPhone SE) */
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   h1 {
     margin-bottom: 25px;
     width: 95%;

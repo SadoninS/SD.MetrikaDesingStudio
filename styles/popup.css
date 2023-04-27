@@ -1,4 +1,3 @@
-
 .popup {
     position: fixed;
     top: 0;
@@ -21,25 +20,13 @@
 }
 
 .popup-content {
-    padding: 94px 55px 86px;
+    padding: 94px 60px 86px;
     position: relative;
     width: 55.5%;
     background: #FFFFFF;
     border-radius: 10px;
     max-height: 100%;
     overflow-y: auto;
-}
-
-.pupup-close-btn {
-    position: absolute;
-    right: 45px;
-    top: 45px;
-    width: 30px;
-    height: 30px;
-    background-image: url(../images/services/popup-close-btn.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
 }
 
 .popup-title {
@@ -79,22 +66,6 @@
     outline: none;
 }
 
-.popup-submit-btn {
-    padding: 0;
-    width: 100%;
-    line-height: 67px;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #AD1818;
-    border-radius: 5px;
-    border: 1px solid #AD1818;
-}
-
-.popup-submit-btn:hover {
-    color: #AD1818;
-    background-color: #FFFFFF;
-}
-
 @media (max-width: 1180px) {
     .popup {
         padding: 50px 120px;
@@ -111,25 +82,16 @@
     }
 }
 
-
-
-
 @media (max-width: 680px) {
     .popup {
         padding: 50px 50px;
     }
 
     .popup-content {
-        padding: 80px 16px;
+        padding: 80px 30px;
 
     }
-
-    .pupup-close-btn {
-        right: 35px;
-        width: 18px;
-        height: 18px;
-    }
-
+    
     .popup-title {
         font-size: 30px;
         line-height: 38px;
@@ -140,16 +102,16 @@
         font-size: 20px;
         line-height: 24px;
     }
-
-    .popup-submit-btn {
-        line-height: 67px;
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 460px) {
     .popup {
         padding: 50px 12px;
+    }
+
+    .popup-content {
+        padding: 80px 16px;
+
     }
 
     .popup-title {
@@ -165,8 +127,6 @@
 
     .popup-input-wrapper {
         padding: 40px 0 60px;
-        display: flex;
-        flex-direction: column;
         row-gap: 30px;
     }
 

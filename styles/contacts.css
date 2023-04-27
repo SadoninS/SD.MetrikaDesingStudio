@@ -1,7 +1,3 @@
-#contacts h2 {
-  margin-bottom: 25px;
-}
-
 .contacts {
   display: flex;
   gap: 100px;
@@ -18,7 +14,7 @@
   background-position: left;
 }
 
-.tel:before{
+.tel:before {
   background-image: url('../images/contacts/mob-ico.png');
 }
 
@@ -89,9 +85,6 @@
 }
 
 @media (max-width: 460px) {
-  #contacts h2 {
-    margin-bottom: 20px;
-  }
 
   .tel,
   .email {

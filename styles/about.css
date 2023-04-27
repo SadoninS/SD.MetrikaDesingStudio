@@ -1,0 +1,52 @@
+.about-description {
+  margin-bottom: 30px;
+  width: 1048px;
+  font-size: 45px;
+  line-height: 61px;
+  color: #121212;
+}
+
+@media (max-width: 1180px) {
+  .about-description {
+    width: 90%;
+  }
+}
+
+@media (max-width: 960px) {
+  .about-description {
+    width: 80%;
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 820px) {
+  .about-description {
+    width: 80%;
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-description {
+    width: 80%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .about-description {
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 280px) {
+  .about-description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

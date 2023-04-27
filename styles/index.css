@@ -4,7 +4,8 @@ input {
   font-family: "Manrope", Courier, monospace;
 }
 
-.body-fixed,.body-fixed-2 {
+.body-fixed,
+.body-fixed-2 {
   overflow: hidden;
 }
 
@@ -24,7 +25,7 @@ h2,
   letter-spacing: -0.03em;
 }
 
-h1 {
+/* h1 {
   margin-bottom: 30px;
   width: 956px;
   font-size: 60px;
@@ -37,9 +38,9 @@ h2 {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   cursor: pointer;
   color: #121212;
@@ -49,66 +50,26 @@ button {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: inherit;
   cursor: pointer;
   display: block;
-}
-
-/* Блок Header */
-
-/* header {
-  margin: 0 auto;
-  position: relative;
-  width: 1150px;
-  height: 128px;
-}
-
-.logo {
-  position: absolute;
-  top: 33px;
-}
-
-.navLinks {
-  position: absolute;
-  top: 33px;
-  left: 685px;
-}
-
-.navLink {
-  display: inline-block;
-  margin-right: 57px;
-  font-size: 18px;
-  line-height: 25px;
-  text-transform: uppercase;
-}
-
-.navLink:last-child {
-  margin-right: 0px;
-}
-
-.navLink:hover {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-  padding-bottom: 1px;
-  opacity: 0.5;
 } */
 
-/* Блок Main */
-
-main {
+/* main {
   margin: 0 auto;
-}
+  width: 100%;
+} */
 
 section {
   margin: 0 auto 150px;
   padding: 0 15px;
-  width: 1180px;
+  max-width: 1180px;
 }
 
 
 
 /* секция intro */
 
-
+/* 
 .intro-backgroung-image-wrapper {
   position: relative;
   background: url(../images/intro-chair.png) center/cover no-repeat, rgba(12, 12, 12, 0.5);
@@ -123,12 +84,12 @@ section {
   font-size: 20px;
   line-height: 27px;
   color: #ffffff;
-}
+} */
 
 /* секция About */
 
 
-.about-description {
+/* .about-description {
   margin-bottom: 30px;
   width: 1048px;
   font-size: 45px;
@@ -146,11 +107,11 @@ section {
   text-decoration: none;
   color: #ffffff;
   background-color: #ad1818;
-}
+} */
 
 /* секция Projects */
 
-.project {
+/* .project {
   height: 548px;
   margin-bottom: 90px;
 }
@@ -186,11 +147,11 @@ section {
 .showAllProjects:hover {
   color: #ffffff;
   background-color: #ad1818;
-}
+} */
 
 /* секция Services */
 
-#services {
+/* #services {
   width: 100%;
   background-color: #121212;
   padding: 150px 0px;
@@ -257,11 +218,11 @@ section {
 .order-service:hover {
   color: #AD1818;
   background: #ffffff;
-}
+} */
 
 /* Секция Reviews */
 
-.reviews {
+/* .reviews {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -272,7 +233,7 @@ section {
 
 .review {
   width: calc(50% - 25px);
-  ;
+  
 }
 
 .review:last-child:nth-child(2n + 1) {
@@ -288,4 +249,26 @@ section {
 .review-text {
   font-size: 22px;
   line-height: 30px;
+} */
+
+@media (max-width: 1180px) {
+  /* main {
+    width: 100%;
+  } */
+
+  section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  section {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 680px) {
+  section {
+    margin-bottom: 100px;
+  }
 }
