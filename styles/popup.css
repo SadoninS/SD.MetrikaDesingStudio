@@ -22,7 +22,7 @@
 .popup-content {
     padding: 94px 60px 86px;
     position: relative;
-    width: 55.5%;
+    width: 777px;
     background: #FFFFFF;
     border-radius: 10px;
     max-height: 100%;
@@ -64,16 +64,6 @@
 
 .popup-input:focus {
     outline: none;
-}
-
-@media (max-width: 1180px) {
-    .popup {
-        padding: 50px 120px;
-    }
-
-    .popup-content {
-        width: 100%;
-    }
 }
 
 @media (max-width: 960px) {
