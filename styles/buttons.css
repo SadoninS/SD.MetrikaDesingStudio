@@ -111,6 +111,10 @@ button {
     background-color: #ffffff;
 }
 
+.pupup-close-btn:hover {
+opacity: 0.5;
+}
+
 .popup-submit-btn {
     width: 100%;
     font-size: 20px;
