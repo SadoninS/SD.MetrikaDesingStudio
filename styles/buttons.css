@@ -8,6 +8,7 @@ button {
     margin: 0;
     padding: 0;
     border: none;
+    background: none;
     cursor: pointer;
     display: block;
 }
@@ -25,7 +26,7 @@ button {
     display: none;
 }
 
-.burger-btn:hover{
+.burger-btn:hover {
     opacity: 0.5;
 }
 
@@ -42,26 +43,24 @@ button {
     background-color: #ffffff;
 }
 
-.burger-close-btn:hover{
+.burger-close-btn:hover {
     opacity: 0.5;
 }
 
 .about-btn-services {
-    display: block;
     width: 255px;
-    border-radius: 5px;
     font-size: 20px;
     line-height: 67px;
     text-align: center;
     color: #ffffff;
     background-color: #ad1818;
     border: 1px solid #ad1818;
+    border-radius: 5px;
 }
 
 .about-btn-services:hover {
     color: #ad1818;
     background-color: #ffffff;
-
 }
 
 .details {
@@ -91,6 +90,7 @@ button {
     text-align: center;
     color: #ffffff;
     background: #AD1818;
+    border: 1px solid #ad1818;
     border-radius: 5px;
 }
 
@@ -111,16 +111,14 @@ button {
     background-color: #ffffff;
 }
 
-
 .popup-submit-btn {
-    padding: 0;
     width: 100%;
-    line-height: 67px;
     font-size: 20px;
+    line-height: 67px;
     color: #ffffff;
     background-color: #AD1818;
-    border-radius: 5px;
     border: 1px solid #AD1818;
+    border-radius: 5px;
 }
 
 .popup-submit-btn:hover {
@@ -129,24 +127,20 @@ button {
 }
 
 .gallery-controls {
+    z-index: 2;
     position: absolute;
     bottom: 160px;
     display: flex;
     column-gap: 14px;
-    z-index: 2;
 }
 
 .gallery-control-prev,
 .gallery-control-next {
-    border: none;
-    background: none;
     width: 40px;
     height: 40px;
     background-image: url(../images/gallery/gallery-control-btn.png);
     background-repeat: no-repeat;
     background-position: left;
-    color: #ffffff;
-    cursor: pointer;
 }
 
 .gallery-control-next {
@@ -161,17 +155,13 @@ button {
 
 
 
-
-
-@media (max-width: 1180px) {
-    .about-btn-services {
-        width: 100%;
-    }
-}
-
 @media (max-width: 960px) {
     .burger-btn {
         display: block;
+    }
+
+    .about-btn-services {
+        width: 100%;
     }
 
     .gallery-controls {
@@ -223,13 +213,19 @@ button {
 }
 
 @media (max-width: 460px) {
-
     .burger-btn {
         background-image: url(../images/header/burger-mobile.png);
         background-position: 85% 35%;
     }
+
+    .burger-close-btn {
+        background-image: url(../images/header/burger-close-btn.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-color: #ffffff;
+    }
+
     .about-btn-services {
-        margin: 0;
         font-size: 16px;
         line-height: 51px;
         border-radius: 3.80172px;
@@ -247,7 +243,6 @@ button {
     }
 
     .order-service {
-        margin: 0;
         font-size: 22px;
         line-height: 100px;
     }
@@ -256,6 +251,12 @@ button {
         justify-content: space-between;
         width: calc(100% - 30px);
         bottom: calc(50% - 20px);
+    }
+
+    .gallery-control-prev,
+    .gallery-control-next {
+        width: 30px;
+        height: 30px;
     }
 }
 

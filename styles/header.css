@@ -4,7 +4,7 @@ header {
   position: relative;
   display: flex;
   justify-content: space-between;
-  /* width: 1180px; */
+  width: 1165px;
 }
 
 .logo {
@@ -40,7 +40,7 @@ header {
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   opacity: 0;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 
 .burger-open {
@@ -55,6 +55,12 @@ header {
   width: 274px;
   background: #FFFFFF;
   overflow-y: auto;
+  transition: transform 0.4s linear;
+  transform: translateX(100%);
+}
+
+.burger-open .burger-content {
+  transform: translateX(0);
 }
 
 .burger-logo {
@@ -76,8 +82,8 @@ header {
   line-height: 34px;
 }
 
-.burger-navLink:hover{
-opacity: 0.5;
+.burger-navLink:hover {
+  opacity: 0.5;
 }
 
 .bugrer-contacts-title {
@@ -156,6 +162,13 @@ opacity: 0.5;
   .burger-content {
     width: 75%;
   }
+
+  .burger-nav {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
 }
 
 @media (max-width: 320px) {

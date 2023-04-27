@@ -30,7 +30,8 @@ h2 {
 
 @media (max-width: 1180px) {
     h1 {
-        width: 931px;
+        font-size: 59px;
+        width: 925px;
     }
 }
 
@@ -76,10 +77,6 @@ h2 {
 
     #gallery h2 {
         top: 60px;
-    }
-
-    #contacts h2 {
-        margin-bottom: 20px;
     }
 }
 
