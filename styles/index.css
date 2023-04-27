@@ -29,7 +29,7 @@ h2,
 section {
   margin: 0 auto 150px;
   padding: 0 15px;
-  max-width: 1180px;
+  width: 1180px;
 }
 
 @media (max-width: 1180px) {
