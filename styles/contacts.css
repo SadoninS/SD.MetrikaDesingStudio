@@ -50,6 +50,8 @@
   .tel,
   .email {
     font-size: 50px;
+    line-height: 55px;
+    height: 60px;
   }
 }
 
@@ -58,6 +60,8 @@
   .tel,
   .email {
     font-size: 45px;
+    line-height: 50px;
+    height: 55px;
   }
 }
 
@@ -66,6 +70,8 @@
   .tel,
   .email {
     font-size: 40px;
+  line-height: 45px;
+  height: 50px;
   }
 }
 
@@ -78,6 +84,8 @@
   .tel,
   .email {
     font-size: 35px;
+    line-height: 40px;
+    height: 45px;
   }
 
   .tel:before,
@@ -86,14 +94,6 @@
   }
 }
 
-@media (max-width: 460px) {
-
-  .tel,
-  .email {
-    font-size: 35px;
-    line-height: 46px;
-  }
-}
 
 @media (max-width: 320px) {
 
@@ -101,6 +101,7 @@
   .email {
     font-size: 30px;
     line-height: 38px;
+    height: 43px;
   }
 
   .tel:before,
