@@ -1,0 +1,297 @@
+/* для широких смартфонов: Mobile L */
+@media (max-width: 460px) {
+  section {
+    margin-bottom: 80px;
+    padding: 0 12px;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .intro-backgroung-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 304px;
+    background: url(../images/intro-chair-375.png) 10%/cover no-repeat, rgba(12, 12, 12, 0.5);
+  }
+
+  .intro-description {
+    bottom: 15px;
+    left: 15px;
+    width: 72%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about-description {
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about-btn-services {
+    margin: 0;
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .project {
+    margin-bottom: 49px;
+  }
+
+  .project:last-child {
+    margin-bottom: 60px;
+  }
+
+  .project-location {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .details {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .showAllProjects {
+    margin: 0;
+    font-size: 22px;
+    line-height: 100px;
+    border-radius: 3.80172px;
+  }
+
+  #services {
+    padding: 80px 0px;
+  }
+
+  .services-container {
+    padding: 0px 13px;
+  }
+
+  .services {
+    row-gap: 60px;
+    flex-direction: column;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service-image {
+    margin-bottom: 10px;
+    width: 434px;
+    height: 100%;
+  }
+
+  .service-description {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .service-price {
+    top: 24px;
+    left: 24px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .order-service {
+    margin: 0;
+    font-size: 22px;
+    line-height: 100px;
+  }
+
+  .review-title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/* По макету: Mobile M(IPhone SE) */
+
+@media (max-width: 375px) {
+  h1 {
+    margin-bottom: 25px;
+    width: 95%;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .intro-description {
+    bottom: 15px;
+    left: 15px;
+    width: 85%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-btn-services {
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .project {
+    margin-bottom: 49px;
+  }
+
+  .project:last-of-type {
+    margin-bottom: 60px;
+
+  }
+
+  .project-image {
+    margin-bottom: 20px;
+  }
+
+  .project-location {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .details {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .showAllProjects {
+    border: 0.760343px solid #AD1818;
+  }
+}
+
+/* для узких смартфонов: Mobile S*/
+@media (max-width: 320px) {
+  section {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .intro-backgroung-image-wrapper {
+    height: 270px;
+  }
+
+  .intro-description {
+    width: 70%;
+    bottom: 15px;
+    left: 15px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .about-description {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .about-btn-services {
+    font-size: 14px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .project-location {
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .details {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .showAllProjects {
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .order-service {
+    font-size: 16px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+}
+
+/* внешний дисплей Sumsung Fold*/
+@media (max-width: 280px) {
+  h1 {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .intro-backgroung-image-wrapper {
+    height: 240px;
+  }
+
+  .intro-description {
+    bottom: 10px;
+    left: 10px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .about-description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .about-btn-services {
+    font-size: 14px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .project-location {
+    margin-bottom: 11px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .details {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .showAllProjects {
+    padding: 0;
+    font-size: 14px;
+    line-height: 51px;
+    border-radius: 3.80172px;
+  }
+
+  .service-price {
+    top: 12px;
+    left: 12px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 26px;
+  }
+}

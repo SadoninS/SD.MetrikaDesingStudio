@@ -1,0 +1,326 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #121212;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: block;
+}
+
+.burger-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/header/burger-tablet.png);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 70% 35%;
+    display: none;
+}
+
+.burger-btn:hover {
+    opacity: 0.5;
+}
+
+.burger-close-btn {
+    z-index: 4;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/header/burger-close-btn.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: #ffffff;
+}
+
+.burger-close-btn:hover {
+    opacity: 0.5;
+}
+
+.about-btn-services {
+    width: 255px;
+    font-size: 20px;
+    line-height: 67px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ad1818;
+    border: 1px solid #ad1818;
+    border-radius: 5px;
+}
+
+.about-btn-services:hover {
+    color: #ad1818;
+    background-color: #ffffff;
+}
+
+.details {
+    font-size: 20px;
+    line-height: 27px;
+    color: #ad1818;
+}
+
+.showAllProjects {
+    font-size: 30px;
+    line-height: 153px;
+    text-align: center;
+    color: #ad1818;
+    border: 1px solid #ad1818;
+    border-radius: 5px;
+}
+
+.showAllProjects:hover {
+    color: #ffffff;
+    background-color: #ad1818;
+}
+
+.order-service {
+    width: 100%;
+    font-size: 30px;
+    line-height: 153px;
+    text-align: center;
+    color: #ffffff;
+    background: #AD1818;
+    border: 1px solid #ad1818;
+    border-radius: 5px;
+}
+
+.order-service:hover {
+    color: #AD1818;
+    background: #ffffff;
+}
+
+.pupup-close-btn {
+    position: absolute;
+    right: 45px;
+    top: 45px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/services/popup-close-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+
+.pupup-close-btn:hover {
+opacity: 0.5;
+}
+
+.popup-submit-btn {
+    width: 100%;
+    font-size: 20px;
+    line-height: 67px;
+    color: #ffffff;
+    background-color: #AD1818;
+    border: 1px solid #AD1818;
+    border-radius: 5px;
+}
+
+.popup-submit-btn:hover {
+    color: #AD1818;
+    background-color: #FFFFFF;
+}
+
+.gallery-controls {
+    z-index: 2;
+    position: absolute;
+    bottom: 160px;
+    display: flex;
+    column-gap: 14px;
+}
+
+.gallery-control-prev,
+.gallery-control-next {
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/gallery/gallery-control-btn.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.gallery-control-next {
+    background-image: url(../images/gallery/gallery-control-btn.png);
+    transform: rotate(180deg);
+}
+
+.gallery-control-prev:hover,
+.gallery-control-next:hover {
+    opacity: 0.5;
+}
+
+
+
+@media (max-width: 960px) {
+    .burger-btn {
+        display: block;
+    }
+
+    .about-btn-services {
+        width: 100%;
+    }
+
+    .gallery-controls {
+        bottom: 150px;
+    }
+}
+
+@media (max-width: 820px) {
+    .details {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .showAllProjects {
+        font-size: 26px;
+        line-height: 120px;
+    }
+
+    .order-service {
+        font-size: 26px;
+        line-height: 120px;
+    }
+}
+
+@media (max-width: 680px) {
+    .showAllProjects {
+        line-height: 100px;
+    }
+
+    .details {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .order-service {
+        line-height: 100px;
+    }
+
+    .pupup-close-btn {
+        right: 35px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .popup-submit-btn {
+        line-height: 67px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .burger-btn {
+        background-image: url(../images/header/burger-mobile.png);
+        background-position: 85% 35%;
+    }
+
+    .burger-close-btn {
+        background-image: url(../images/header/burger-close-btn.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-color: #ffffff;
+    }
+
+    .about-btn-services {
+        font-size: 16px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+
+    .details {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .showAllProjects {
+        font-size: 22px;
+        line-height: 100px;
+        border-radius: 3.80172px;
+    }
+
+    .order-service {
+        font-size: 22px;
+        line-height: 100px;
+    }
+
+    .gallery-controls {
+        justify-content: space-between;
+        width: calc(100% - 30px);
+        bottom: calc(50% - 20px);
+    }
+
+    .gallery-control-prev,
+    .gallery-control-next {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-btn-services {
+        font-size: 16px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+
+    .details {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .showAllProjects {
+        border: 0.760343px solid #AD1818;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-btn-services {
+        font-size: 14px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+
+    .details {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .showAllProjects {
+        font-size: 16px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+
+    .order-service {
+        font-size: 16px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+}
+
+@media (max-width: 280px) {
+    .about-btn-services {
+        font-size: 14px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+
+    .details {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .showAllProjects {
+        font-size: 14px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+}

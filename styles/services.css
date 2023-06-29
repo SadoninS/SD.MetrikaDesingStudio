@@ -1,0 +1,175 @@
+#services {
+    width: 100%;
+    background-color: #121212;
+    padding: 150px 0px;
+}
+
+.services-container {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 0 15px;
+}
+
+.services {
+    margin-bottom: 104px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 75px;
+}
+
+.service {
+    position: relative;
+    width: calc(50% - 5px);
+}
+
+.service-image {
+    margin-bottom: 25px;
+    max-width: 100%;
+    height: 389px;
+    object-fit: cover;
+}
+
+.service-price {
+    padding: 0 20px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #ad1818;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.service-description {
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 960px) {
+    #services {
+        padding: 150px 0 120px 0;
+    }
+
+    .services {
+        margin-bottom: 80px;
+        row-gap: 80px;
+    }
+
+    .service-image {
+        margin-bottom: 15px;
+        height: 315px;
+    }
+
+    .service-description {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .service-price {
+        padding: 0 27px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 820px) {
+    #services {
+        padding: 100px 0px;
+    }
+
+    .services {
+        margin-bottom: 70px;
+        row-gap: 70px;
+    }
+
+    .service-description {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .service-price {
+        padding: 0 15px;
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 680px) {
+    #services {
+        padding: 75px 0px;
+    }
+
+    .services {
+        margin-bottom: 60px;
+        row-gap: 60px;
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    #services {
+        padding: 80px 0px;
+    }
+
+    .services-container {
+        padding: 0px 13px;
+    }
+
+    .services {
+        row-gap: 60px;
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service-image {
+        margin-bottom: 10px;
+        width: 434px;
+        height: 100%;
+    }
+
+    .service-description {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .service-price {
+        top: 24px;
+        left: 24px;
+        padding: 0 24px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 280px) {
+    .showAllProjects {
+        padding: 0;
+        font-size: 14px;
+        line-height: 51px;
+        border-radius: 3.80172px;
+    }
+
+    .service-price {
+        top: 12px;
+        left: 12px;
+        padding: 0;
+        font-size: 12px;
+        line-height: 26px;
+    }
+}
