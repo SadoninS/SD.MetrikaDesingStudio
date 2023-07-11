@@ -52,7 +52,7 @@ header {
   padding: 80px 0 60px 30px;
   position: relative;
   width: 274px;
-  background: #FFFFFF;
+  background: #ffffff;
   overflow-y: auto;
   transition: transform 0.4s linear;
   transform: translateX(100%);
@@ -133,6 +133,10 @@ header {
   header {
     width: 100%;
   }
+
+  .nav {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -140,15 +144,9 @@ header {
     width: 127px;
     height: 22px;
   }
-
-  .nav {
-    display: none;
-  }
-
 }
 
 @media (max-width: 460px) {
-
   header {
     padding: 31px 12px 61px;
   }
@@ -167,11 +165,10 @@ header {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-}
+  }
 }
 
 @media (max-width: 320px) {
-
   .burger-contact-tel:after,
   .burger-contact-email:after {
     display: none;
